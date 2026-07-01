@@ -1,0 +1,560 @@
+\documentclass[12pt, a4paper, oneside]{memoir}
+
+% ==================================================
+% FONT & ENCODING
+% ==================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage{bookmark}
+\OnehalfSpacing
+\settocdepth{subsection}
+\setsecnumdepth{subsection}
+
+% ==================================================
+% PAGE GEOMETRY & PAPER SIZE
+% ==================================================
+\setstocksize{297mm}{210mm}
+\settrimmedsize{297mm}{210mm}{*}
+\setlrmarginsandblock{1.25in}{1.25in}{*}
+\setulmarginsandblock{1in}{1in}{*}
+\checkandfixthelayout
+
+% ==================================================
+% GRAPHICS & TABLES
+% ==================================================
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{float}
+
+% ==================================================
+% LISTS & PARAGRAPHS
+% ==================================================
+\usepackage{enumitem}
+\setlist{nosep}
+\nonzeroparskip
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+% ==================================================
+% COLORS & HYPERLINKS
+% ==================================================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Automated Traffic Violation Ticketing System for Nepal},
+    pdfauthor={Gahan},
+    pdfkeywords={YOLO, Traffic Violation Detection, ALPR, Nepal}
+}
+
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+% ==================================================
+% HEADER & FOOTER (Native Memoir Style)
+% ==================================================
+\makepagestyle{proposalstyle}
+\makeoddhead{proposalstyle}{\rightmark}{}{\thepage}
+\makeheadrule{proposalstyle}{\textwidth}{0.4pt}
+\makeoddfoot{proposalstyle}{}{}{}
+\pagestyle{proposalstyle}
+
+% ==================================================
+% CHAPTER & SECTION STYLES
+% ==================================================
+\chapterstyle{veelo}
+\setsecheadstyle{\Large\bfseries}
+\setsubsecheadstyle{\large\bfseries}
+
+% ==================================================
+% BIBLIOGRAPHY (IEEE)
+% ==================================================
+\usepackage[
+    backend=biber,
+    style=ieee,
+    sorting=none
+]{biblatex}
+\addbibresource{references.bib}
+
+% ==================================================
+% TITLE PAGE REDESIGN
+% ==================================================
+\makeatletter
+\renewcommand{\maketitle}{
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{-0.8cm}
+    \includegraphics[width=2.8cm]{kec_logo.png}
+
+    \vspace{0.6cm}
+
+    \begin{Spacing}{1.1}
+    {\huge\bfseries AUTOMATED TRAFFIC VIOLATION\\[0.3cm]
+    TICKETING SYSTEM\par}
+    \end{Spacing}
+
+    \vspace{0.6cm}
+    {\large\scshape Minor Project Proposal\par}
+
+    \vspace{1cm}
+
+    {\small Submitted in partial fulfillment of the requirements for the degree of\par}
+    {\small \textbf{Bachelor in Computer Engineering}\par}
+
+    \vspace{1cm}
+
+    {\small Proposed by:\par}
+    {\small\bfseries 
+        Aayush Lohani (BCT80004)\par 
+        Bimarsha Dahal (BCT80026)\par 
+        Gahan Raj Dangol (BCT80033)\par
+        Manish Poudel (BCT80044)\par
+    }
+
+    \vfill
+
+    {\normalsize Department of Computer Engineering\par}
+    {\normalsize\bfseries Kathmandu Engineering College\par}
+    {\small (Affiliated to Tribhuvan University)\par}
+    {\small Kalimati, Kathmandu, Nepal\par}
+
+    \vspace{0.4cm}
+    {\normalsize January 2026\par}
+\end{center}
+\clearpage
+}
+\makeatother
+
+% ==================================================
+% DOCUMENT START
+% ==================================================
+\begin{document}
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+
+% ==================================================
+% ABSTRACT
+% ==================================================
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This proposal presents the design and planned implementation of an Automated Traffic Violation Ticketing System aimed at improving traffic rule enforcement in Nepal. The proposed system will leverage deep learning-based computer vision techniques to automatically detect various traffic violations, including speeding and helmet non-compliance.
+
+The system will integrate YOLO for real-time object detection, automatic license plate recognition using EasyOCR and digital e-Challan generation. A unique ticket transfer mechanism will be incorporated to allow registered vehicle owners to reassign liability to the actual violator in shared-vehicle scenarios. The platform is expected to provide evidence-based notifications, improve enforcement transparency and reduce the operational burden on traffic authorities.
+
+% ==================================================
+% ABBREVIATIONS
+% ==================================================
+\chapter*{List of Abbreviations}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+
+\begin{description}[leftmargin=3.5cm, style=nextline]
+    \item[AI]   Artificial Intelligence
+    \item[ALPR] Automatic License Plate Recognition
+    \item[API]  Application Programming Interface
+    \item[CNN]  Convolutional Neural Network
+    \item[COCO] Common Objects in Context
+    \item[DoTM] Department of Transport Management (Nepal)
+    \item[FPS]  Frames Per Second
+    \item[GPU]  Graphics Processing Unit
+    \item[GUI]  Graphical User Interface
+    \item[IoU]  Intersection over Union
+    \item[mAP]  Mean Average Precision
+    \item[MOTA] Multiple Object Tracking Accuracy
+    \item[OCR]  Optical Character Recognition
+    \item[YOLO] You Only Look Once
+\end{description}
+
+% ==================================================
+% MAIN CONTENT
+% ==================================================
+\mainmatter
+
+% --------------------------------------------------
+\chapter{Introduction}
+
+\section{Background Theory}
+
+Nepal has experienced unprecedented motorization over the past two decades, with total registered vehicles exceeding 4.5 million as of 2024 \cite{asiantransport2025}. Motorcycles and scooters comprise approximately 80\% of this fleet, with the Kathmandu Valley alone accounting for over 1.2 million registered vehicles, creating one of the highest vehicular density ratios in South Asia relative to road infrastructure capacity \cite{acharya2015}.
+
+This rapid motorization has resulted in alarming road safety statistics. The Nepal Police Traffic Division reports that road traffic accidents cause over 2,500 fatalities and approximately 15,000 serious injuries annually \cite{who2023}. Motorcycle riders represent nearly 60\% of road traffic fatalities, with helmet non-compliance and speeding identified as primary contributing factors \cite{nepalpolice2025}. Studies indicate that helmet usage rates in urban areas remain below 45\%, despite mandatory helmet laws enacted in 2003 \cite{who2023}. Speed-related violations constitute another critical concern, with approximately 35\% of fatal accidents involving excessive speed \cite{asiantransport2025}.
+
+Current enforcement mechanisms face significant challenges. The Nepal Police operates with approximately one traffic officer per 8,000 vehicles in major urban centers, making comprehensive manual surveillance impractical \cite{nepalpolice2025}. Traditional enforcement covers less than 5\% of road network time-space through stationary checkpoints and manual observation. This irregular enforcement undermines compliance rates, while manual ticketing requires 15-20 minutes per violation, limiting enforcement capacity during peak hours \cite{acharya2015}.
+
+Recent advancements in artificial intelligence and computer vision present viable solutions for automated traffic monitoring \cite{sushma2025traffic}. Deep learning techniques, particularly YOLO (You Only Look Once), have demonstrated remarkable capabilities in real-time object recognition and tracking \cite{ultralytics2025yolo}. YOLO achieves detection speeds exceeding 60 frames per second while maintaining mean Average Precision (mAP) values above 50\% on standard benchmarks \cite{jetir2023}. Multi-object tracking systems such as DeepSORT complement object detection by maintaining consistent identities across video frames, achieving tracking accuracy rates above 75\% while operating in real-time \cite{ijarcce2026}. This capability is essential for speed estimation and multi-frame violation verification.
+
+Automatic License Plate Recognition (ALPR) has matured significantly through deep learning-based Optical Character Recognition \cite{np_alpr2023}. Modern systems such as EasyOCR recognize text under challenging conditions including varying fonts, illumination changes, motion blur and partial occlusions, with recognition accuracy rates exceeding 90\% for standardized license plates under typical surveillance conditions \cite{patil2024traffic}.
+
+Computer vision-based enforcement systems offer substantial advantages over traditional manual monitoring. Automated systems provide continuous 24/7 surveillance without fatigue, simultaneously covering multiple lanes and processing thousands of vehicles per hour with marginal additional cost \cite{ijarcce2026}. This scalability is particularly relevant in resource-constrained contexts such as Nepal. Furthermore, automated systems eliminate subjective judgment variations and provide timestamped digital evidence for transparent dispute resolution \cite{nepalpolice2025}.
+
+International deployments demonstrate measurable safety improvements. Studies report 15-30\% reductions in average speeds, 20-40\% decreases in traffic violations and 25-50\% improvements in helmet compliance following implementation of automated enforcement systems \cite{bigwood2025review}. Additionally, continuous data collection enables evidence-based policy development and identification of accident-prone locations \cite{ioegc2015}.
+
+The application to Nepal's context presents unique considerations. The high proportion of motorcycles necessitates specialized focus on helmet detection. Dense traffic in Kathmandu Valley provides advantages such as slower speeds improving image clarity, but also challenges including frequent vehicle occlusions \cite{acharya2015}. Infrastructure constraints including lower-resolution cameras and varying lighting conditions require robust algorithms. The proposed ticket transfer mechanism addresses vehicle sharing practices prevalent in Nepal, allowing liability reassignment from registered owners to actual violators with photographic evidence.
+
+This proposal explores adapting state-of-the-art computer vision technologies to Nepal's specific traffic enforcement needs, considering local traffic patterns, infrastructure constraints and cultural factors influencing system design and implementation.
+
+\section{Problem Statement}
+The current traffic enforcement system in Nepal faces several challenges that limit its effectiveness and fairness:
+
+\begin{itemize}
+    \item Heavy reliance on manual surveillance and physical checkpoints, which is resource-intensive and cannot provide continuous coverage
+    \item Inconsistent enforcement due to limited manpower and infrastructure
+    \item Penalization of registered vehicle owners instead of actual violators, particularly problematic in shared-vehicle scenarios
+    \item Limited availability of digital evidence for dispute resolution, leading to conflicts and lack of accountability
+    \item Inefficient and time-consuming violation processing that delays enforcement actions
+    \item Lack of comprehensive data collection for traffic pattern analysis and policy-making
+\end{itemize}
+
+These challenges result in reduced compliance with traffic regulations, increased road accidents and diminished public trust in the enforcement system.
+
+\section{Objectives}
+
+\subsection{Primary Objectives}
+\begin{enumerate}
+    \item To design a system capable of detecting traffic violations including helmet non-compliance and speeding using YOLO-based object detection
+    \item To propose an automatic license plate recognition mechanism for vehicle identification
+    \item To develop a framework for digital e-Challan generation with photographic evidence
+    \item To design a ticket transfer mechanism that enables liability reassignment in shared-vehicle scenarios
+    \item To create user interfaces for vehicle owners and traffic authorities to manage violations and review evidence
+\end{enumerate}
+
+\subsection{Secondary Objectives}
+\begin{enumerate}
+    \item To aim for improvement of detection accuracy across different violation types
+    \item To ensure system robustness under varying lighting, weather and traffic density conditions
+    \item To provide analytical insights and reporting capabilities for traffic authorities
+    \item To establish a scalable architecture that can accommodate additional violation types in future iterations
+\end{enumerate}
+
+\section{Scope and Application of the Project}
+
+\subsection{Scope}
+The scope of this project encompasses the following areas:
+
+\begin{itemize}
+    \item Detection of helmet violations for motorcycle and scooter riders
+    \item Detection of speeding violations for all vehicle types
+    \item Automated license plate recognition for vehicle identification
+    \item Digital violation record generation with photographic evidence and metadata
+    \item Ticket transfer request and review workflow for shared-vehicle scenarios
+    \item Web-based dashboards for vehicle owners to view violations and submit transfer requests
+    \item Administrative interface for traffic authorities to review violations and manage enforcement
+    \item Integration framework with existing vehicle registration databases
+\end{itemize}
+
+\subsection{Applications}
+The proposed system has several practical applications:
+
+\begin{itemize}
+    \item Real-time traffic monitoring at critical junctions and accident-prone zones
+    \item Automated enforcement in areas with limited traffic police presence
+    \item Data collection for traffic pattern analysis and urban planning
+    \item Evidence-based dispute resolution in violation cases
+    \item Public awareness through transparent enforcement mechanisms
+    \item Foundation for future smart city traffic management initiatives
+\end{itemize}
+
+\newpage
+\subsection{Limitations}
+The following limitations are acknowledged:
+
+\begin{itemize}
+    \item The system will initially support limited violation types (helmet and speeding)
+    \item Performance will depend on camera quality, placement and environmental conditions
+    \item Integration with payment gateway systems will not be addressed in this phase
+    \item The system requires reliable internet connectivity for cloud-based processing
+    \item Privacy and data protection mechanisms will need continuous refinement
+    \item Initial deployment will be limited to controlled test environments
+\end{itemize}
+
+% --------------------------------------------------
+\chapter{Literature Review}
+
+Recent advancements in computer vision and deep learning have significantly influenced the development of intelligent traffic monitoring systems \cite{sushma2025traffic}. Among various object detection architectures, the YOLO (You Only Look Once) family of models has gained wide adoption due to its single-stage detection capability and real-time performance \cite{ultralytics2025yolo}. YOLO, the latest version released by Ultralytics, demonstrates improved accuracy with mean Average Precision (mAP) of 53.9\% on the COCO dataset, faster inference speed of 0.99 ms per image on NVIDIA A100 GPU and better generalization compared to its predecessors, making it suitable for real-time traffic surveillance applications \cite{jetir2023}. The model's architecture improvements include enhanced feature pyramid networks and optimized anchor-free detection mechanisms that enable detection of small objects such as helmets at distances up to 50 meters \cite{ultralytics2025yolo}.
+
+Several studies have focused on helmet detection for motorcycle riders using deep learning-based object detection techniques \cite{patil2024traffic}. In South Asian traffic environments, where traffic density is high and riding patterns are diverse, helmet detection systems based on YOLO architectures have reported detection accuracies exceeding 95\% with precision rates of 93.2\% and recall rates of 91.8\% \cite{ijarcce2026}. A study conducted in India by Kumar et al. (2023) deployed YOLOv8-based helmet detection across 15 traffic intersections, processing over 2.5 million vehicle instances and achieving 96.3\% accuracy in daylight conditions and 89.7\% under nighttime illumination \cite{kumar2023helmet}. These systems typically employ convolutional neural networks to differentiate between helmeted and non-helmeted riders under varying lighting and occlusion conditions \cite{patil2024traffic}.
+
+Speed violation detection has been explored using multi-object tracking approaches combined with object detection models \cite{pramila2024speed}. Techniques such as DeepSORT, when integrated with YOLO-based detectors, enable consistent vehicle tracking across frames with Multiple Object Tracking Accuracy (MOTA) scores of 76.8\% \cite{ijarcce2026}. These systems allow speed estimation using frame displacement and camera calibration parameters, achieving measurement accuracy within ±5 km/h compared to radar-based measurements \cite{pramila2024speed}. Prior research has shown that such approaches can provide sufficiently accurate speed measurements for enforcement and monitoring purposes \cite{pramila2024speed}. A study by Pramila et al. (2024) evaluated tracking-based speed estimation across 20 highway segments, demonstrating 92.1\% agreement with traditional speed measurement devices for vehicles traveling between 40-120 km/h \cite{pramila2024speed}.
+
+Automatic License Plate Recognition (ALPR) forms a critical component of automated enforcement systems \cite{np_alpr2023}. Optical Character Recognition (OCR)-based approaches, particularly those using deep learning frameworks such as EasyOCR, have demonstrated reliable performance across diverse license plate formats and environmental conditions with character recognition accuracy rates of 94.6\% for clean plates and 87.3\% under degraded conditions \cite{rai2024ocr}. These methods are capable of extracting alphanumeric information from vehicle plates even under challenging scenarios such as motion blur, partial occlusion and varying illumination \cite{patil2024traffic}. Research by Rai et al. (2024) compared multiple OCR frameworks across 50,000 license plate images from 8 countries, finding that transformer-based architectures outperformed traditional CNN-based approaches by 8.4 percentage points in challenging conditions \cite{rai2024ocr}.
+
+Integration of multiple detection and recognition modules presents additional challenges \cite{bigwood2025review}. A systematic review by Bigwood et al. (2025) analyzed 47 automated traffic enforcement systems deployed globally between 2018-2024, finding that end-to-end accuracy averaged 78.3\%, with failure primarily attributed to license plate recognition failures (43\% of errors), tracking losses during occlusion (31\% of errors) and false positive violations (26\% of errors) \cite{bigwood2025review}. Systems employing multi-frame verification with minimum thresholds of 5-7 consecutive frames reduced false positives by 67\% compared to single-frame detection approaches \cite{bigwood2025review}.
+
+Economic and social impacts of automated enforcement have been documented in multiple jurisdictions \cite{bigwood2025review}. Studies show that automated speed enforcement reduced average speeds by 8.3 km/h and traffic fatalities by 23\% over deployment periods \cite{bigwood2025review}. Automated helmet detection systems increased compliance rates from 41\% to 73\% within 18 months of implementation \cite{bigwood2025review}. Public acceptance studies indicate that transparency mechanisms, including photographic evidence availability and clear appeal processes, increase system legitimacy significantly \cite{bigwood2025review}.
+
+While several existing systems address individual traffic violations or multi-violation detection frameworks, most focus primarily on detection accuracy and system performance \cite{ijarcce2026}. A notable limitation in the literature is the lack of mechanisms to handle shared-vehicle usage, which is common in developing countries like Nepal where household vehicle sharing rates exceed 60\% \cite{maharjan2024shaping}. Current implementations generally assign penalties to registered vehicle owners without considering actual violator identity \cite{nepalpolice2025}. Survey research by Maharjan et al. (2024) in Kathmandu Valley found that 47\% of respondents expressed concerns about liability for violations committed by other drivers, with 62\% indicating they would support automated enforcement systems that included mechanisms for liability transfer \cite{maharjan2024shaping}.
+
+This proposed project aims to address this research gap by exploring a ticket transfer mechanism that enables liability reassignment supported by digital evidence, thereby promoting fairness and public trust in automated traffic enforcement systems.
+
+% --------------------------------------------------
+\chapter{Methodology}
+
+\section{Process Model}
+
+An Agile development methodology will be adopted for the proposed system to ensure flexibility, continuous improvement and timely delivery. The development process will be carried out in iterative phases, each consisting of planning, design, implementation, testing and review activities.
+
+The development lifecycle will follow these phases:
+
+\begin{enumerate}
+    \item \textbf{Requirement Analysis:} Identification of functional and non-functional requirements through consultation, literature review and analysis of existing traffic enforcement practices
+    
+    \item \textbf{System Design:} Development of system architecture, database schema, data flow diagrams and interface designs
+    
+    \item \textbf{Implementation:} Incremental development of system components including violation detection modules, backend services and user interfaces
+    
+    \item \textbf{Testing and Optimization:} Continuous testing at unit, integration and system levels, followed by performance optimization based on evaluation metrics
+    
+    \item \textbf{Review and Refinement:} Regular review meetings to assess progress, gather feedback and refine system components
+\end{enumerate}
+
+This iterative approach allows for early identification of issues, continuous evaluation of system performance and adaptation to changing requirements throughout the development process.
+
+\section{Block Diagram}
+
+The proposed system architecture consists of several interconnected components that work together to detect violations, process information and manage enforcement workflows. The overall architecture is illustrated in Figure \ref{fig:block_diagram}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{archi.png}
+    \caption{System Block Diagram}
+    \label{fig:block_diagram}
+\end{figure}
+
+The major components include:
+
+\begin{itemize}
+    \item \textbf{Video Input:} Captures and decodes real-time surveillance video streams
+    \item \textbf{Detection \& Tracking:} Employs YOLO for object detection and DeepSORT for identity tracking
+    \item \textbf{Violation Analysis:} Applies logic-based rules to identify helmet and speeding violations
+    \item \textbf{ALPR Module:} Utilizes EasyOCR for automated license plate character recognition
+    \item \textbf{Database:} Relational storage in PostgreSQL for violation records and metadata
+    \item \textbf{Backend Services:} High-performance RESTful API communication powered by FastAPI
+    \item \textbf{User Interface:} Interactive web dashboards for authorities and owners built with React.js
+    \item \textbf{Notification System:} Automated dispatch of violation alerts via email and SMS services
+\end{itemize}
+
+\section{Algorithm}
+
+The core violation detection algorithm integrates object detection, tracking and recognition techniques to identify and process traffic violations in real-time. The algorithm operates on continuous video streams and generates violation records with supporting evidence.
+
+\vspace{0.3cm}
+
+\begin{center}
+\begin{minipage}{0.9\textwidth}
+\SingleSpacing
+\begin{algorithm}[H]
+\caption{Traffic Violation Detection System}
+\label{alg:violation_detection}
+\KwIn{Video stream from surveillance camera}
+\KwOut{Violation records with evidence}
+\BlankLine
+\textbf{Initialize:}\\
+Load YOLO, DeepSORT and EasyOCR models\;
+Set thresholds: $speed\_threshold$, $confidence\_threshold$, $min\_frames$\;
+$violation\_buffer \gets \emptyset$\;
+\BlankLine
+\For{each frame in video\_stream}{
+    \tcp{Step 1: Detect and Track}
+    $detected\_objects \gets$ YOLO.detect$(frame)$\;
+    $tracked\_objects \gets$ DeepSORT.update$(detected\_objects)$\;
+    \BlankLine
+    \tcp{Step 2: Check Violations}
+    \For{each object in tracked\_objects}{
+        \If{$object.class ==$ ``motorcycle''}{
+            $helmet \gets$ FindHelmet$(object)$\;
+            \If{$helmet == None$}{
+                AddViolation$(violation\_buffer,$ ``NO\_HELMET''$)$\;
+            }
+        }
+        \If{$object.class \in \{$``vehicle'', ``motorcycle''$\}$}{
+            $speed \gets$ CalculateSpeed$(object)$\;
+            \If{$speed > speed\_threshold$}{
+                AddViolation$(violation\_buffer,$ ``SPEEDING''$)$\;
+            }
+        }
+    }
+    \BlankLine
+    \tcp{Step 3: Process Confirmed Violations}
+    \For{each violation in violation\_buffer}{
+        \If{$violation.frame\_count \geq min\_frames$}{
+            $plate\_number \gets$ EasyOCR.read$(CropPlate(frame))$\;
+            \If{IsValidPlate$(plate\_number)$}{
+                $owner \gets$ QueryDatabase$(plate\_number)$\;
+                $record \gets$ CreateRecord$(violation, owner)$\;
+                GenerateChallan$(record)$ and SendNotification$(owner)$\;
+                Remove $violation$ from buffer\;
+            }
+        }
+    }
+}
+\Return{violation records}\;
+\end{algorithm}
+\end{minipage}
+\end{center}
+
+\vspace{0.2cm}
+
+\subsection{Key Algorithm Features}
+\begin{itemize}
+    \item \textbf{Multi-frame Verification:} Violations confirmed across $min\_frames$ consecutive frames to reduce false positives
+    
+    \item \textbf{Tracking-based Speed Estimation:} Uses DeepSORT to maintain object identity and calculate speed from displacement
+    
+    \item \textbf{Spatial Analysis:} Determines helmet compliance by analyzing relationships between motorcycles, riders and helmets
+    
+    \item \textbf{Camera Calibration:} Converts pixel measurements to real-world speeds using homography matrix
+\end{itemize}
+
+\vspace{0.2cm}
+
+\subsection{Complexity Analysis}
+\begin{itemize}
+    \item \textbf{Time Complexity:} $O(n \cdot m)$ per frame, \newline where $n$ = detected objects, $m$ = tracked objects
+    \item \textbf{Space Complexity:} $O(k)$, \newline where $k$ = maximum concurrent violations in buffer
+\end{itemize}
+
+\section{Flowchart}
+
+The flowchart illustrates the complete workflow from video input through violation detection, license plate recognition, record generation and notification dispatch. The detailed process flow is shown in Figure \ref{fig:flowchart}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{flowchart.png}
+    \caption{System Flowchart}
+    \label{fig:flowchart}
+\end{figure}
+
+\newpage
+
+\section{Tools to be Used}
+
+The proposed system will be developed using the following technologies and tools:
+
+\subsection{Programming Languages and Frameworks}
+\begin{itemize}
+    \item \textbf{Python 3.12+:} Primary language for backend development and machine learning components
+    \item \textbf{JavaScript (React.js):} Frontend development for user and admin dashboards
+    \item \textbf{FastAPI:} Modern web framework for building RESTful APIs
+\end{itemize}
+
+\subsection{Machine Learning and Computer Vision}
+\begin{itemize}
+    \item \textbf{YOLO (Ultralytics):} Real-time object detection for vehicles, riders and helmets
+    \item \textbf{DeepSORT:} Multi-object tracking across video frames
+    \item \textbf{OpenCV:} Image processing and video manipulation
+    \item \textbf{EasyOCR:} Optical character recognition for license plate reading
+    \item \textbf{PyTorch/TensorFlow:} Deep learning framework for model training and inference
+\end{itemize}
+
+\subsection{Database and Storage}
+\begin{itemize}
+    \item \textbf{PostgreSQL:} Relational database for storing violation records and user data
+    \item \textbf{Cloud Storage:} For storing violation images and video clips
+\end{itemize}
+
+\subsection{Development and Deployment Tools}
+\begin{itemize}
+    \item \textbf{Git:} Version control system
+    \item \textbf{Postman:} API testing and documentation
+    \item \textbf{Jupyter Notebook:} Experimentation and model development
+\end{itemize}
+
+% \subsection{Additional Libraries}
+% \begin{itemize}
+%     \item \textbf{NumPy, Pandas:} Data manipulation and analysis
+%     \item \textbf{Matplotlib, Seaborn:} Data visualization
+%     \item \textbf{SQLAlchemy:} Object-relational mapping for database operations
+% \end{itemize}
+
+% --------------------------------------------------
+\chapter{Epilogue}
+
+\section{Expected Output}
+
+Upon successful completion, the proposed system is expected to deliver the following outputs:
+
+\subsection{Technical Deliverables}
+\begin{itemize}
+    \item A functional automated traffic violation detection system capable of identifying helmet and speeding violations in real-time
+    \item Automatic license plate recognition module with high character recognition accuracy
+    \item Digital e-Challan generation system with photographic evidence and violation metadata
+    \item Web-based user interface for vehicle owners to view violations and submit transfer requests
+    \item Administrative dashboard for traffic authorities to review and manage violations
+\end{itemize}
+
+\subsection{Functional Outcomes}
+\begin{itemize}
+    \item Demonstration of feasibility of automated traffic violation detection in Nepalese traffic conditions
+    \item Provision of digital evidence-based violation records that can be used for dispute resolution
+    \item Reduction in dependency on manual enforcement through automated monitoring
+    \item Implementation of a fair ticket transfer mechanism that allows liability reassignment in shared-vehicle scenarios
+    \item Generation of analytical reports providing insights into traffic violation patterns and trends
+\end{itemize}
+
+\subsection{Documentation}
+\begin{itemize}
+    \item Comprehensive project report documenting system design, implementation and evaluation
+    \item Technical documentation including API specifications, database schema and deployment guidelines
+    \item User manuals for vehicle owners and traffic authorities
+    \item Source code with appropriate comments and version control history
+\end{itemize}
+
+\section{Time Schedule}
+
+The project will be executed over a period of 20 weeks following a structured timeline as detailed in Table \ref{tab:project_timeline}.
+
+\begin{table}[htbp]
+\centering
+\caption{Project Timeline for Minor Project}
+\label{tab:project_timeline}
+\renewcommand{\arraystretch}{1.1}
+\small
+\begin{tabular}{|>{\centering\arraybackslash}p{2.2cm} 
+                |>{\raggedright\arraybackslash}p{3.2cm} 
+                |>{\raggedright\arraybackslash}p{6.3cm}|}
+\hline
+\textbf{Weeks} & \textbf{Phase} & \textbf{Planned Activities} \\
+\hline
+1--3  & Planning and Analysis 
+      & Identification of project objectives, detailed requirement analysis, consultation, comprehensive literature review and feasibility study \\
+\hline
+4--6  & System Design 
+      & Development of system architecture, design of data flow diagrams, database schema design, user interface mockups and API specification \\
+\hline
+7--14 & Implementation 
+      & Development of core modules including YOLO-based violation detection, DeepSORT tracking, license plate recognition using EasyOCR, backend API services with FastAPI, frontend interfaces with React.js, database integration and notification system \\
+\hline
+15--18 & Testing and Optimization 
+       & Unit testing of individual modules, integration testing, system testing with real-world scenarios, performance evaluation, accuracy assessment, bug fixing and system optimization based on findings \\
+\hline
+19--20 & Documentation and Presentation
+       & Preparation of comprehensive project report, technical documentation, user manuals, presentation slides, final project demonstration and deployment guide \\
+\hline
+\end{tabular}
+\end{table}
+
+Regular progress reviews will be conducted at the end of each phase to ensure adherence to the timeline and to address any challenges that may arise during development.
+
+% ==================================================
+% REFERENCES/BIBLIOGRAPHY
+% ==================================================
+\backmatter
+\nocite{*}
+\printbibliography[heading=bibintoc, title={References/Bibliography}]
+
+\end{document}

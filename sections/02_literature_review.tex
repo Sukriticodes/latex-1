@@ -1,0 +1,78 @@
+\chapter{Literature Review}
+Before starting the design of TRIBAL, the team looked at some existing applications that
+solve similar problems. This helped the team understand what features are already
+available, what is missing, and how TRIBAL can be different from these platforms. This
+chapter looks at a few popular apps that are related to roommate finding and activity
+matching, and explains their limitations.
+
+\section{Roomster}
+Roomster is a roommate and room-finding platform that is mainly used in the United
+States and a few other countries. It allows users to post listings for rooms and search for
+roommates based on location and budget. However, Roomster does not have any real
+compatibility matching system. It mostly works like a classified listing site where users
+browse profiles and contact each other manually. There is no scoring system to tell a user
+how well they might get along with a potential roommate based on lifestyle habits like
+cleanliness, sleep schedule, or smoking
+
+
+\section{Bumble BFF}
+Bumble BFF is a friend-finding mode of the popular Bumble dating app. It uses a swipebased system where users can like or pass on other profiles to find friends with similar
+interests. While this works well for general friend matching, it is not designed for
+roommate finding. Bumble BFF also does not collect detailed lifestyle information like
+budget range or sleep schedule, which are important factors when two people are going to
+live together.
+
+\section{Meetup}
+Meetup is a platform mainly used to organize and join group activities and events based
+on shared interests. It works well for finding activity partners but does not have any
+roommate matching feature at all. Meetup is also not very popular in Nepal, and most
+local activity groups still rely on Facebook groups or word of mouth instead.
+
+\section{Facebook Groups}
+Facebook Groups are widely used in Nepal for both roommate searching and activity
+planning. Many people post in groups like “Room for Rent Kathmandu” or “Hiking
+Buddies Nepal” to find roommates or activity partners. The biggest problem with this
+method is that there is no structured system behind it. Anyone can post anything, there is
+no compatibility check, and there is no way to verify whether the listed information is
+true. This often leads to mismatched roommates and unsafe meetups with strangers.
+
+\section{Roomi}
+Roomi is another roommate-finding application that allows users to filter listings by
+location, price, and a few basic preferences. It is more focused on the United States
+market and is not commonly used in Nepal. Like Roomster, Roomi does not use any
+weighted scoring system, so users still have to manually go through profiles and decide
+compatibility on their own.
+
+\section{SpareRoom}
+SpareRoom is a roommate listing platform used mostly in the United Kingdom. It allows
+detailed filtering of listings, such as gender preference and smoking status, but the
+matching is still based on simple filters rather than an actual compatibility score. There is
+no algorithm that combines multiple lifestyle factors into a single match percentage.
+
+\section{Summary of Limitations}
+After looking at these platforms, the team noticed a few common limitations:
+\begin{itemize}
+\item Most platforms either focus only on roommate listing or only on activity and
+event matching, but not both.
+\item None of these apps use a proper compatibility scoring system that takes multiple
+lifestyle factors into account at once.
+\item Apps that are popular internationally, like Roomster, Roomi, and SpareRoom, are
+not commonly used or trusted in Nepal.
+\item Local methods like Facebook groups do not provide any safety or compatibility
+checks, which can lead to bad roommate experiences.
+\item There is no platform that allows users to both find a compatible roommate and
+discover local activity partners from one single application.
+\end{itemize}
+\section{How Tribal is different}
+TRIBAL tries to solve these problems by combining roommate matching and activity and
+event discovery into a single mobile application. Instead of relying on manual browsing,
+TRIBAL uses a weighted compatibility scoring algorithm that compares onboarding
+answers from two users and generates a compatibility score out of 100. This score
+considers multiple lifestyle factors together, such as cleanliness, budget, sleep schedule,
+noise level, smoking, guests, interests, study habit, food, and drinking preference, instead
+of just one or two filters.
+By keeping the matching system rule-based instead of using machine learning, TRIBAL
+is able to give users a transparent and explainable match score. A user can see why their
+compatibility score with another person is high or low, which is something most existing
+platforms do not provide. This approach is also more practical to build and test within the
+time frame of a minor project, while still giving meaningful results to users.

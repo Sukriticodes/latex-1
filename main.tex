@@ -1,0 +1,142 @@
+\documentclass[12pt, a4paper, oneside]{memoir}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{xurl} 
+\usepackage{microtype}
+\usepackage{csquotes}
+
+\setSpacing{1.5}
+\settocdepth{subsection}
+\setsecnumdepth{subsection}
+\renewcommand{\contentsname}{Table of Contents}
+
+\setstocksize{297mm}{210mm}
+\settrimmedsize{297mm}{210mm}{*}
+
+\setlrmarginsandblock{1.5in}{1in}{*}
+\setulmarginsandblock{1in}{1in}{*}
+
+\setheadfoot{15pt}{0.5in}
+\setheaderspaces{*}{0pt}{*}
+
+\checkandfixthelayout
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{arydshln}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{float}
+\usepackage{forloop}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+
+\usepackage{enumitem}
+\setlist{nosep}
+\nonzeroparskip
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=black,
+    pdfborder={0 0 0},
+    pdftitle={TRIBAL: Roommate Matching and Event Discovery Platform},
+    pdfauthor={Gahan},
+    pdfkeywords={Flutter, Django, PostgreSQL, Roommate Matching, Compatibility Scoring, JWT, WebSockets}
+}
+\usepackage{bookmark}
+
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+\makepagestyle{proposalstyle}
+\makeoddhead{proposalstyle}{}{}{}
+\makeevenhead{proposalstyle}{}{}{}
+\makeheadrule{proposalstyle}{\textwidth}{0pt}
+\makeoddfoot{proposalstyle}{}{\thepage}{}
+\makeevenfoot{proposalstyle}{}{\thepage}{}
+\pagestyle{proposalstyle}
+\aliaspagestyle{chapter}{proposalstyle}
+
+\chapterstyle{veelo}
+
+\makechapterstyle{custom16pt}{
+  \setlength{\beforechapskip}{-20pt}
+  \setlength{\afterchapskip}{12pt}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{}
+  \renewcommand*{\printchapternum}{\normalfont\fontsize{16}{20}\bfseries Chapter \thechapter\quad}
+  \renewcommand*{\afterchapternum}{}
+  \renewcommand*{\printchaptertitle}[1]{\normalfont\fontsize{16}{20}\bfseries ##1}
+}
+\chapterstyle{custom16pt}
+
+\setsecheadstyle{\normalfont\fontsize{14}{17}\bfseries}
+\setsubsecheadstyle{\normalfont\fontsize{13}{16}\bfseries}
+\setsubsubsecheadstyle{\normalfont\fontsize{12}{15}\bfseries}
+
+\usepackage[
+    backend=bibtex,
+    style=ieee,
+    sorting=none
+]{biblatex}
+\DeclareFieldFormat{url}{#1}
+\addbibresource{references.bib}
+\addbibresource{bibliography.bib}
+
+\begin{document}
+
+\frontmatter
+
+\input{sections/00_coverpage}
+% \input{sections/00_titlepage}
+\input{sections/00_acknowledgement}
+\input{sections/00_abstract}
+
+\clearpage
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+\input{sections/00_abbreviations}
+
+\mainmatter
+
+ \include{sections/01_introduction}
+ 
+ \include{sections/02_literature_review}
+ 
+ \include{sections/03_methodology}
+ 
+ \include{sections/04_epilogue}
+ 
+\backmatter
+\emergencystretch=1em
+
+\begin{refsection}[references.bib]
+    \nocite{*}
+    \printbibliography[heading=bibintoc, title={References}]
+\end{refsection}
+
+\newpage
+\begin{refsection}[bibliography.bib]
+    \nocite{*}
+    \printbibliography[heading=bibintoc, title={Bibliography}]
+\end{refsection}
+
+\newpage
+\input{sections/05_appendix}
+
+\end{document}

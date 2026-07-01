@@ -1,0 +1,147 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{flutter_docs}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Flutter Documentation}
+    \field{year}{2024}
+  \endentry
+
+  \entry{django_docs}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=FDS}{%
+         family={Foundation},
+         familyi={F\bibinitperiod},
+         given={Django\bibnamedelima Software},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FDS1}
+    \strng{fullhash}{FDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Django Documentation}
+    \field{year}{2024}
+  \endentry
+
+  \entry{drf_docs}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Encode},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Django REST Framework Documentation}
+    \field{year}{2024}
+  \endentry
+
+  \entry{channels_docs}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=FDS}{%
+         family={Foundation},
+         familyi={F\bibinitperiod},
+         given={Django\bibnamedelima Software},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FDS1}
+    \strng{fullhash}{FDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Django Channels Documentation}
+    \field{year}{2024}
+  \endentry
+
+  \entry{postgresql_docs}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=GPGD}{%
+         family={Group},
+         familyi={G\bibinitperiod},
+         given={PostgreSQL Global\bibnamedelima Development},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GPGD1}
+    \strng{fullhash}{GPGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{PostgreSQL Documentation}
+    \field{year}{2024}
+  \endentry
+
+  \entry{jwt_intro}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Auth0},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{JSON Web Tokens Introduction}
+    \field{year}{2024}
+  \endentry
+
+  \entry{provider_package}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=p}{%
+         family={pub.dev},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{p1}
+    \strng{fullhash}{p1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Provider Package Documentation}
+    \field{year}{2024}
+  \endentry
+
+  \entry{gorouter_package}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=p}{%
+         family={pub.dev},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{p1}
+    \strng{fullhash}{p1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{GoRouter Package Documentation}
+    \field{year}{2024}
+  \endentry
+\enddatalist
+\endinput
