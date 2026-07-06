@@ -1,6 +1,6 @@
-PWD c:\Users\NITRO\Downloads\mid_defense_tribal_1\Mid_Defense
+PWD c:\Users\NITRO\Documents\latex-1
 INPUT C:\Users\NITRO\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\NITRO\Downloads\mid_defense_tribal_1\Mid_Defense\main.tex
+INPUT c:\Users\NITRO\Documents\latex-1\main.tex
 OUTPUT main.log
 INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex\latex\memoir\memoir.cls
 INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex\latex\memoir\memoir.cls
@@ -463,6 +463,7 @@ INPUT .\sections\00_acknowledgement.tex
 INPUT .\sections\00_acknowledgement.tex
 INPUT sections\00_acknowledgement.tex
 INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-t1.tfm
+INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-t1.tfm
 INPUT .\sections\00_abstract.tex
 INPUT .\sections\00_abstract.tex
 INPUT .\sections\00_abstract.tex
@@ -471,7 +472,6 @@ INPUT sections\00_abstract.tex
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc
-INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-t1.tfm
 INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
@@ -508,6 +508,13 @@ OUTPUT sections\03_methodology.aux
 INPUT .\sections\03_methodology.tex
 INPUT .\sections\03_methodology.tex
 INPUT sections\03_methodology.tex
+INPUT .\images\process.png
+INPUT .\images\process.png
+INPUT .\images\process.png
+INPUT .\images\process.png
+INPUT .\images\process.png
+INPUT .\images\process.png
+INPUT .\images\process.png
 INPUT .\images\system.png
 INPUT .\images\system.png
 INPUT .\images\system.png
