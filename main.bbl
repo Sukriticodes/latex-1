@@ -19,52 +19,226 @@
 
 \refsection{1}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Manchanda2023}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=5b71ba05e9565ded5fba688929c147ca}{%
-           family={Manchanda},
-           familyi={M\bibinitperiod},
-           given={Tanya},
-           giveni={T\bibinitperiod}}}%
-        {{hash=a4effe94cb5c4b53d1bb437f911e7792}{%
-           family={Stein},
+    \entry{Beierle2017}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=5b488629033e8f9cadac19afa1cb4430}{%
+           family={Beierle},
+           familyi={B\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=395f0ce3dfc9495f6c08d26c0f1ee970}{%
+           family={Grunert},
+           familyi={G\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c032b3a86477786e1415b09618906352}{%
+           family={Göndör},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=78b78e20b5e1c37e7f857f2b67eebbc0}{%
+           family={Schlüter},
            familyi={S\bibinitperiod},
-           given={Alan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=1a914914179b2b4bd92fc4006bccb46d}{%
-           family={Fazel},
-           familyi={F\bibinitperiod},
-           given={Mina},
-           giveni={M\bibinitperiod}}}%
+           given={Viktor},
+           giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{a5d7111056a10899b70bee08040e9daa}
-      \strng{fullhash}{6e588979d7bb1cbeab24a17a58ec57b7}
-      \strng{fullhashraw}{6e588979d7bb1cbeab24a17a58ec57b7}
-      \strng{bibnamehash}{6e588979d7bb1cbeab24a17a58ec57b7}
-      \strng{authorbibnamehash}{6e588979d7bb1cbeab24a17a58ec57b7}
-      \strng{authornamehash}{a5d7111056a10899b70bee08040e9daa}
-      \strng{authorfullhash}{6e588979d7bb1cbeab24a17a58ec57b7}
-      \strng{authorfullhashraw}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{181ffec06f5dc7c47d2a4e86aac9be77}
+      \strng{fullhash}{b5bf8cd160c9914d12764a082fd2deda}
+      \strng{fullhashraw}{b5bf8cd160c9914d12764a082fd2deda}
+      \strng{bibnamehash}{b5bf8cd160c9914d12764a082fd2deda}
+      \strng{authorbibnamehash}{b5bf8cd160c9914d12764a082fd2deda}
+      \strng{authornamehash}{181ffec06f5dc7c47d2a4e86aac9be77}
+      \strng{authorfullhash}{b5bf8cd160c9914d12764a082fd2deda}
+      \strng{authorfullhashraw}{b5bf8cd160c9914d12764a082fd2deda}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Environmental Research and Public Health}
-      \field{number}{3}
-      \field{title}{Investigating the Role of Friendship Interventions on the Mental Health Outcomes of Adolescents: A Scoping Review of Range and a Systematic Review of Effectiveness}
-      \field{volume}{20}
-      \field{year}{2023}
+      \field{booktitle}{2017 IEEE International Conference on AI \& Mobile Services (AIMS)}
+      \field{title}{Towards Psychometrics-based Friend Recommendations in Social Networking Services}
+      \field{year}{2017}
       \true{nocite}
-      \field{pages}{2160}
-      \range{pages}{1}
+      \field{pages}{105\bibrangedash 108}
+      \range{pages}{4}
       \verb{doi}
-      \verb 10.3390/ijerph20032160
+      \verb 10.1109/AIMS.2017.22
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.3390/ijerph20032160
+      \verb https://doi.org/10.1109/AIMS.2017.22
       \endverb
       \verb{url}
-      \verb https://doi.org/10.3390/ijerph20032160
+      \verb https://doi.org/10.1109/AIMS.2017.22
+      \endverb
+    \endentry
+    \entry{Thakare2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e21709c43b79007e1dd6c48cd77ed881}{%
+           family={Thakare},
+           familyi={T\bibinitperiod},
+           given={Nita},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e6cb4b7ef2e6967ef682f21f83ed7aaa}{%
+           family={Ingale},
+           familyi={I\bibinitperiod},
+           given={Aadesh},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7223492991ce88760392c7b1369e8bcd}{%
+           family={Ghotekar},
+           familyi={G\bibinitperiod},
+           given={Samadhan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9839393b01de4521864bec496cb8f06f}{%
+           family={Jadhav},
+           familyi={J\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5eba10b4b24239fdfe1557e02f5bae58}{%
+           family={Kadam},
+           familyi={K\bibinitperiod},
+           given={Akshay},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca9322931220713866abe1e7f61de81b}
+      \strng{fullhash}{bcd3011815c4061390c938c37274a6d1}
+      \strng{fullhashraw}{bcd3011815c4061390c938c37274a6d1}
+      \strng{bibnamehash}{bcd3011815c4061390c938c37274a6d1}
+      \strng{authorbibnamehash}{bcd3011815c4061390c938c37274a6d1}
+      \strng{authornamehash}{ca9322931220713866abe1e7f61de81b}
+      \strng{authorfullhash}{bcd3011815c4061390c938c37274a6d1}
+      \strng{authorfullhashraw}{bcd3011815c4061390c938c37274a6d1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2456-3315}
+      \field{journaltitle}{International Journal for Research Trends and Innovation}
+      \field{number}{4}
+      \field{title}{A Web-Based Roommate Matching System Using Preference Based Matching}
+      \field{volume}{11}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{b1\bibrangedash b5}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://www.ijrti.org/papers/IJRTI2604132.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ijrti.org/papers/IJRTI2604132.pdf
+      \endverb
+    \endentry
+    \entry{Bhalla2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9ad26ec2fe52e6a0b126cbaf1d2e13cf}{%
+           family={Bhalla},
+           familyi={B\bibinitperiod},
+           given={Apoorva},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d322b6a9ba326ba779acefa0e87b8fb4}{%
+           family={Sethi},
+           familyi={S\bibinitperiod},
+           given={Preksha},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a68ebd10c66335eb9ab173a0de9c6787}{%
+           family={Ahuja},
+           familyi={A\bibinitperiod},
+           given={Diti},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d807355365e9640a7fa7b06bd1aa24ad}{%
+           family={Chugh},
+           familyi={C\bibinitperiod},
+           given={Aditya\bibnamedelima Raj},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f28945de72410a7eaedf50c9454c6d11}
+      \strng{fullhash}{ffd6e745f82022624f0a310fb00b9275}
+      \strng{fullhashraw}{ffd6e745f82022624f0a310fb00b9275}
+      \strng{bibnamehash}{ffd6e745f82022624f0a310fb00b9275}
+      \strng{authorbibnamehash}{ffd6e745f82022624f0a310fb00b9275}
+      \strng{authornamehash}{f28945de72410a7eaedf50c9454c6d11}
+      \strng{authorfullhash}{ffd6e745f82022624f0a310fb00b9275}
+      \strng{authorfullhashraw}{ffd6e745f82022624f0a310fb00b9275}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Research in Applied Science \& Engineering Technology (IJRASET)}
+      \field{number}{11}
+      \field{title}{Enhancing Co-Living Experience Through Intelligent Roommate Matching}
+      \field{volume}{13}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{1881\bibrangedash 1888}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.22214/ijraset.2025.75484
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.22214/ijraset.2025.75484
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.22214/ijraset.2025.75484
+      \endverb
+    \endentry
+    \entry{Quercia2010}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=27e76c15e2056efb784afbddc01f48fa}{%
+           family={Quercia},
+           familyi={Q\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a513f899b2506321a1e37f601d71c8a4}{%
+           family={Lathia},
+           familyi={L\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=14bbe98e16c1a03b1e919fbffb5924dc}{%
+           family={Calabrese},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=df0dcdb72de7ede675efb32a5f80e039}{%
+           family={Di\bibnamedelima Lorenzo},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Giusy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c277a690b3be7e183b85a00be4828510}{%
+           family={Crowcroft},
+           familyi={C\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fd7fc5aa142f916b6db83e8f80f1c20b}
+      \strng{fullhash}{e75633eaf37ad4a6162af0929c3cf296}
+      \strng{fullhashraw}{e75633eaf37ad4a6162af0929c3cf296}
+      \strng{bibnamehash}{e75633eaf37ad4a6162af0929c3cf296}
+      \strng{authorbibnamehash}{e75633eaf37ad4a6162af0929c3cf296}
+      \strng{authornamehash}{fd7fc5aa142f916b6db83e8f80f1c20b}
+      \strng{authorfullhash}{e75633eaf37ad4a6162af0929c3cf296}
+      \strng{authorfullhashraw}{e75633eaf37ad4a6162af0929c3cf296}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2010 IEEE International Conference on Data Mining (ICDM)}
+      \field{title}{Recommending Social Events from Mobile Phone Location Data}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{971\bibrangedash 976}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICDM.2010.152
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICDM.2010.152
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICDM.2010.152
       \endverb
     \endentry
   \enddatalist
