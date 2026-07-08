@@ -17,429 +17,375 @@
 \endgroup
 
 
-\refsection{1}
+\refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Beierle2017}{inproceedings}{}{}
+    \entry{liao2016}{article}{}{}
       \name{author}{4}{}{%
-        {{hash=5b488629033e8f9cadac19afa1cb4430}{%
-           family={Beierle},
-           familyi={B\bibinitperiod},
-           given={Felix},
-           giveni={F\bibinitperiod}}}%
-        {{hash=395f0ce3dfc9495f6c08d26c0f1ee970}{%
-           family={Grunert},
-           familyi={G\bibinitperiod},
-           given={Kai},
-           giveni={K\bibinitperiod}}}%
-        {{hash=c032b3a86477786e1415b09618906352}{%
-           family={Göndör},
-           familyi={G\bibinitperiod},
-           given={Sebastian},
+        {{hash=b624faa7396cd10ed0608971e10c5985}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bf1afb45a50313a87b61c9f7a08f8989}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=220c19e2c9c76595f81ea1bcf915df14}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={N.\bibnamedelimi N.},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d8934d63a1883546250a27c4c64c32e6}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d206a92f2cf0013de5064b1e2dae7fe0}
+      \strng{fullhash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{fullhashraw}{3187ce72709938d6169dd6087990fdbe}
+      \strng{bibnamehash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{authorbibnamehash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{authornamehash}{d206a92f2cf0013de5064b1e2dae7fe0}
+      \strng{authorfullhash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{authorfullhashraw}{3187ce72709938d6169dd6087990fdbe}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jiangxi University of Finance and Economics}
+      \field{title}{An Intelligent Group Event Recommendation System in Social Networks}
+      \field{year}{2016}
+    \endentry
+    \entry{hosseini2025}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=d021234726e5649b048085b2d5667e57}{%
+           family={Hosseini},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=724f67d9d9a15d6fb911984ef473bf0b}{%
+           family={Narang},
+           familyi={N\bibinitperiod},
+           given={S.},
            giveni={S\bibinitperiod}}}%
-        {{hash=78b78e20b5e1c37e7f857f2b67eebbc0}{%
-           family={Schlüter},
-           familyi={S\bibinitperiod},
-           given={Viktor},
-           giveni={V\bibinitperiod}}}%
+        {{hash=7b82e72e46640a6021b1c6e15b764743}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{181ffec06f5dc7c47d2a4e86aac9be77}
-      \strng{fullhash}{b5bf8cd160c9914d12764a082fd2deda}
-      \strng{fullhashraw}{b5bf8cd160c9914d12764a082fd2deda}
-      \strng{bibnamehash}{b5bf8cd160c9914d12764a082fd2deda}
-      \strng{authorbibnamehash}{b5bf8cd160c9914d12764a082fd2deda}
-      \strng{authornamehash}{181ffec06f5dc7c47d2a4e86aac9be77}
-      \strng{authorfullhash}{b5bf8cd160c9914d12764a082fd2deda}
-      \strng{authorfullhashraw}{b5bf8cd160c9914d12764a082fd2deda}
+      \strng{namehash}{867361d0634b987f152c0e34d584c9df}
+      \strng{fullhash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{fullhashraw}{ca9cc1af32d77683e081a577ff835822}
+      \strng{bibnamehash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{authorbibnamehash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{authornamehash}{867361d0634b987f152c0e34d584c9df}
+      \strng{authorfullhash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{authorfullhashraw}{ca9cc1af32d77683e081a577ff835822}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2017 IEEE International Conference on AI \& Mobile Services (AIMS)}
-      \field{title}{Towards Psychometrics-based Friend Recommendations in Social Networking Services}
-      \field{year}{2017}
-      \true{nocite}
-      \field{pages}{105\bibrangedash 108}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1109/AIMS.2017.22
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/AIMS.2017.22
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/AIMS.2017.22
-      \endverb
+      \field{booktitle}{Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25)}
+      \field{title}{Strategyproof Matching of Roommates and Rooms}
+      \field{year}{2025}
     \endentry
-    \entry{Thakare2026}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=e21709c43b79007e1dd6c48cd77ed881}{%
-           family={Thakare},
-           familyi={T\bibinitperiod},
-           given={Nita},
-           giveni={N\bibinitperiod}}}%
-        {{hash=e6cb4b7ef2e6967ef682f21f83ed7aaa}{%
-           family={Ingale},
-           familyi={I\bibinitperiod},
-           given={Aadesh},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7223492991ce88760392c7b1369e8bcd}{%
-           family={Ghotekar},
-           familyi={G\bibinitperiod},
-           given={Samadhan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=9839393b01de4521864bec496cb8f06f}{%
-           family={Jadhav},
-           familyi={J\bibinitperiod},
-           given={Jay},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5eba10b4b24239fdfe1557e02f5bae58}{%
-           family={Kadam},
-           familyi={K\bibinitperiod},
-           given={Akshay},
-           giveni={A\bibinitperiod}}}%
+    \entry{molis2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=01e9f523b5016b0de881a572f08eea1f}{%
+           family={Molis},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f3d0a485a329e0bd340c7f50569a0771}{%
+           family={Veszteg},
+           familyi={V\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
-      \strng{namehash}{ca9322931220713866abe1e7f61de81b}
-      \strng{fullhash}{bcd3011815c4061390c938c37274a6d1}
-      \strng{fullhashraw}{bcd3011815c4061390c938c37274a6d1}
-      \strng{bibnamehash}{bcd3011815c4061390c938c37274a6d1}
-      \strng{authorbibnamehash}{bcd3011815c4061390c938c37274a6d1}
-      \strng{authornamehash}{ca9322931220713866abe1e7f61de81b}
-      \strng{authorfullhash}{bcd3011815c4061390c938c37274a6d1}
-      \strng{authorfullhashraw}{bcd3011815c4061390c938c37274a6d1}
+      \strng{namehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{fullhash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{fullhashraw}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{bibnamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authorbibnamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authornamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authorfullhash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authorfullhashraw}{f76c65a90b054eedb92f84e3ac9ab2ff}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{2456-3315}
-      \field{journaltitle}{International Journal for Research Trends and Innovation}
-      \field{number}{4}
-      \field{title}{A Web-Based Roommate Matching System Using Preference Based Matching}
-      \field{volume}{11}
-      \field{year}{2026}
-      \true{nocite}
-      \field{pages}{b1\bibrangedash b5}
-      \range{pages}{-1}
-      \verb{urlraw}
-      \verb https://www.ijrti.org/papers/IJRTI2604132.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.ijrti.org/papers/IJRTI2604132.pdf
-      \endverb
+      \field{journaltitle}{SSRN Electronic Journal}
+      \field{note}{Waseda University}
+      \field{title}{Experimental Results on the Roommate Problem}
+      \field{year}{2023}
     \endentry
-    \entry{Bhalla2025}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=9ad26ec2fe52e6a0b126cbaf1d2e13cf}{%
-           family={Bhalla},
-           familyi={B\bibinitperiod},
-           given={Apoorva},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d322b6a9ba326ba779acefa0e87b8fb4}{%
-           family={Sethi},
-           familyi={S\bibinitperiod},
-           given={Preksha},
-           giveni={P\bibinitperiod}}}%
-        {{hash=a68ebd10c66335eb9ab173a0de9c6787}{%
-           family={Ahuja},
-           familyi={A\bibinitperiod},
-           given={Diti},
-           giveni={D\bibinitperiod}}}%
-        {{hash=d807355365e9640a7fa7b06bd1aa24ad}{%
-           family={Chugh},
-           familyi={C\bibinitperiod},
-           given={Aditya\bibnamedelima Raj},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+  \enddatalist
+\endrefsection
+
+\refsection{1}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{hosseini2025}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=d021234726e5649b048085b2d5667e57}{%
+           family={Hosseini},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=724f67d9d9a15d6fb911984ef473bf0b}{%
+           family={Narang},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7b82e72e46640a6021b1c6e15b764743}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{f28945de72410a7eaedf50c9454c6d11}
-      \strng{fullhash}{ffd6e745f82022624f0a310fb00b9275}
-      \strng{fullhashraw}{ffd6e745f82022624f0a310fb00b9275}
-      \strng{bibnamehash}{ffd6e745f82022624f0a310fb00b9275}
-      \strng{authorbibnamehash}{ffd6e745f82022624f0a310fb00b9275}
-      \strng{authornamehash}{f28945de72410a7eaedf50c9454c6d11}
-      \strng{authorfullhash}{ffd6e745f82022624f0a310fb00b9275}
-      \strng{authorfullhashraw}{ffd6e745f82022624f0a310fb00b9275}
+      \strng{namehash}{867361d0634b987f152c0e34d584c9df}
+      \strng{fullhash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{fullhashraw}{ca9cc1af32d77683e081a577ff835822}
+      \strng{bibnamehash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{authorbibnamehash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{authornamehash}{867361d0634b987f152c0e34d584c9df}
+      \strng{authorfullhash}{ca9cc1af32d77683e081a577ff835822}
+      \strng{authorfullhashraw}{ca9cc1af32d77683e081a577ff835822}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25)}
+      \field{title}{Strategyproof Matching of Roommates and Rooms}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{liao2016}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b624faa7396cd10ed0608971e10c5985}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bf1afb45a50313a87b61c9f7a08f8989}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=220c19e2c9c76595f81ea1bcf915df14}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={N.\bibnamedelimi N.},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d8934d63a1883546250a27c4c64c32e6}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d206a92f2cf0013de5064b1e2dae7fe0}
+      \strng{fullhash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{fullhashraw}{3187ce72709938d6169dd6087990fdbe}
+      \strng{bibnamehash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{authorbibnamehash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{authornamehash}{d206a92f2cf0013de5064b1e2dae7fe0}
+      \strng{authorfullhash}{3187ce72709938d6169dd6087990fdbe}
+      \strng{authorfullhashraw}{3187ce72709938d6169dd6087990fdbe}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jiangxi University of Finance and Economics}
+      \field{title}{An Intelligent Group Event Recommendation System in Social Networks}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{molis2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=01e9f523b5016b0de881a572f08eea1f}{%
+           family={Molis},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f3d0a485a329e0bd340c7f50569a0771}{%
+           family={Veszteg},
+           familyi={V\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{fullhash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{fullhashraw}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{bibnamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authorbibnamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authornamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authorfullhash}{f76c65a90b054eedb92f84e3ac9ab2ff}
+      \strng{authorfullhashraw}{f76c65a90b054eedb92f84e3ac9ab2ff}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal for Research in Applied Science \& Engineering Technology (IJRASET)}
-      \field{number}{11}
-      \field{title}{Enhancing Co-Living Experience Through Intelligent Roommate Matching}
-      \field{volume}{13}
-      \field{year}{2025}
+      \field{journaltitle}{SSRN Electronic Journal}
+      \field{note}{Waseda University}
+      \field{title}{Experimental Results on the Roommate Problem}
+      \field{year}{2023}
       \true{nocite}
-      \field{pages}{1881\bibrangedash 1888}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.22214/ijraset.2025.75484
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.22214/ijraset.2025.75484
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.22214/ijraset.2025.75484
-      \endverb
-    \endentry
-    \entry{Quercia2010}{inproceedings}{}{}
-      \name{author}{5}{}{%
-        {{hash=27e76c15e2056efb784afbddc01f48fa}{%
-           family={Quercia},
-           familyi={Q\bibinitperiod},
-           given={Daniele},
-           giveni={D\bibinitperiod}}}%
-        {{hash=a513f899b2506321a1e37f601d71c8a4}{%
-           family={Lathia},
-           familyi={L\bibinitperiod},
-           given={Neal},
-           giveni={N\bibinitperiod}}}%
-        {{hash=14bbe98e16c1a03b1e919fbffb5924dc}{%
-           family={Calabrese},
-           familyi={C\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod}}}%
-        {{hash=df0dcdb72de7ede675efb32a5f80e039}{%
-           family={Di\bibnamedelima Lorenzo},
-           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-           given={Giusy},
-           giveni={G\bibinitperiod}}}%
-        {{hash=c277a690b3be7e183b85a00be4828510}{%
-           family={Crowcroft},
-           familyi={C\bibinitperiod},
-           given={Jon},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{fd7fc5aa142f916b6db83e8f80f1c20b}
-      \strng{fullhash}{e75633eaf37ad4a6162af0929c3cf296}
-      \strng{fullhashraw}{e75633eaf37ad4a6162af0929c3cf296}
-      \strng{bibnamehash}{e75633eaf37ad4a6162af0929c3cf296}
-      \strng{authorbibnamehash}{e75633eaf37ad4a6162af0929c3cf296}
-      \strng{authornamehash}{fd7fc5aa142f916b6db83e8f80f1c20b}
-      \strng{authorfullhash}{e75633eaf37ad4a6162af0929c3cf296}
-      \strng{authorfullhashraw}{e75633eaf37ad4a6162af0929c3cf296}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2010 IEEE International Conference on Data Mining (ICDM)}
-      \field{title}{Recommending Social Events from Mobile Phone Location Data}
-      \field{year}{2010}
-      \true{nocite}
-      \field{pages}{971\bibrangedash 976}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/ICDM.2010.152
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/ICDM.2010.152
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/ICDM.2010.152
-      \endverb
     \endentry
   \enddatalist
 \endrefsection
 
 \refsection{2}
   \datalist[entry]{none/global//global/global/global}
-    \entry{roomster}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=b3aead2d53dd33421fb94ba33d81c21a}{%
-           family={{Roomster}},
-           familyi={R\bibinitperiod}}}%
+    \entry{pressman}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=4d3f81788d99cf425c4b6e0a454baab0}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=13b3d71ce7fd3614b4e2e9ce804597f3}{%
+           family={Maxim},
+           familyi={M\bibinitperiod},
+           given={Bruce\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \strng{namehash}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{fullhash}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{fullhashraw}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{bibnamehash}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{authorbibnamehash}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{authornamehash}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{authorfullhash}{b3aead2d53dd33421fb94ba33d81c21a}
-      \strng{authorfullhashraw}{b3aead2d53dd33421fb94ba33d81c21a}
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{fullhash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{fullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{bibnamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorbibnamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authornamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorfullhash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorfullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Roomster}
-      \field{year}{2026}
+      \field{edition}{9}
+      \field{title}{Software Engineering: A Practitioner's Approach}
+      \field{year}{2019}
       \true{nocite}
-      \verb{urlraw}
-      \verb https://www.roomster.com/
-      \endverb
-      \verb{url}
-      \verb https://www.roomster.com/
-      \endverb
     \endentry
-    \entry{bumble_bff}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=cd297793ff8edde8855221de9ec052d6}{%
-           family={{Bumble}},
-           familyi={B\bibinitperiod}}}%
+    \entry{elmasri}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=c7e2fe1a0e649bf469f3feb7c5aa840d}{%
+           family={Elmasri},
+           familyi={E\bibinitperiod},
+           given={Ramez},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4ae94109c6efa1688beb655559324ba2}{%
+           family={Navathe},
+           familyi={N\bibinitperiod},
+           given={Shamkant\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
-      \strng{namehash}{cd297793ff8edde8855221de9ec052d6}
-      \strng{fullhash}{cd297793ff8edde8855221de9ec052d6}
-      \strng{fullhashraw}{cd297793ff8edde8855221de9ec052d6}
-      \strng{bibnamehash}{cd297793ff8edde8855221de9ec052d6}
-      \strng{authorbibnamehash}{cd297793ff8edde8855221de9ec052d6}
-      \strng{authornamehash}{cd297793ff8edde8855221de9ec052d6}
-      \strng{authorfullhash}{cd297793ff8edde8855221de9ec052d6}
-      \strng{authorfullhashraw}{cd297793ff8edde8855221de9ec052d6}
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{2e8829be23557c692dac07b198a7df6e}
+      \strng{fullhash}{2e8829be23557c692dac07b198a7df6e}
+      \strng{fullhashraw}{2e8829be23557c692dac07b198a7df6e}
+      \strng{bibnamehash}{2e8829be23557c692dac07b198a7df6e}
+      \strng{authorbibnamehash}{2e8829be23557c692dac07b198a7df6e}
+      \strng{authornamehash}{2e8829be23557c692dac07b198a7df6e}
+      \strng{authorfullhash}{2e8829be23557c692dac07b198a7df6e}
+      \strng{authorfullhashraw}{2e8829be23557c692dac07b198a7df6e}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Bumble BFF}
-      \field{year}{2026}
+      \field{edition}{7}
+      \field{title}{Fundamentals of Database Systems}
+      \field{year}{2017}
       \true{nocite}
-      \verb{urlraw}
-      \verb https://bumble.com/bff
-      \endverb
-      \verb{url}
-      \verb https://bumble.com/bff
-      \endverb
     \endentry
-    \entry{meetup}{online}{}{}
+    \entry{flutter_docs}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=b308877945e9d553550011b5891cc26c}{%
-           family={{Meetup}},
-           familyi={M\bibinitperiod}}}%
+        {{hash=c047b10eee763afb6164e077cf1cc268}{%
+           family={{Flutter}},
+           familyi={F\bibinitperiod}}}%
       }
-      \strng{namehash}{b308877945e9d553550011b5891cc26c}
-      \strng{fullhash}{b308877945e9d553550011b5891cc26c}
-      \strng{fullhashraw}{b308877945e9d553550011b5891cc26c}
-      \strng{bibnamehash}{b308877945e9d553550011b5891cc26c}
-      \strng{authorbibnamehash}{b308877945e9d553550011b5891cc26c}
-      \strng{authornamehash}{b308877945e9d553550011b5891cc26c}
-      \strng{authorfullhash}{b308877945e9d553550011b5891cc26c}
-      \strng{authorfullhashraw}{b308877945e9d553550011b5891cc26c}
+      \strng{namehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{fullhash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{fullhashraw}{c047b10eee763afb6164e077cf1cc268}
+      \strng{bibnamehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{authorbibnamehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{authornamehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{authorfullhash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{authorfullhashraw}{c047b10eee763afb6164e077cf1cc268}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Meetup}
+      \field{title}{Flutter Documentation}
       \field{year}{2026}
       \true{nocite}
       \verb{urlraw}
-      \verb https://www.meetup.com/
+      \verb https://docs.flutter.dev
       \endverb
       \verb{url}
-      \verb https://www.meetup.com/
+      \verb https://docs.flutter.dev
       \endverb
     \endentry
-    \entry{roomi}{online}{}{}
+    \entry{django_docs}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=cb6a9c22bad57a6090cefa9122cc81cb}{%
-           family={{Roomi}},
-           familyi={R\bibinitperiod}}}%
+        {{hash=f831bff1f5132f6edd2ec0e00e5b9af9}{%
+           family={{Django Software Foundation}},
+           familyi={D\bibinitperiod}}}%
       }
-      \strng{namehash}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{fullhash}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{fullhashraw}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{bibnamehash}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{authorbibnamehash}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{authornamehash}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{authorfullhash}{cb6a9c22bad57a6090cefa9122cc81cb}
-      \strng{authorfullhashraw}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{namehash}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{fullhash}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{fullhashraw}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{bibnamehash}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{authorbibnamehash}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{authornamehash}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{authorfullhash}{f831bff1f5132f6edd2ec0e00e5b9af9}
+      \strng{authorfullhashraw}{f831bff1f5132f6edd2ec0e00e5b9af9}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Roomi}
+      \field{title}{Django Documentation}
       \field{year}{2026}
       \true{nocite}
       \verb{urlraw}
-      \verb https://www.roomiapp.com/
+      \verb https://docs.djangoproject.com
       \endverb
       \verb{url}
-      \verb https://www.roomiapp.com/
+      \verb https://docs.djangoproject.com
       \endverb
     \endentry
-    \entry{spareroom}{online}{}{}
+    \entry{material_design}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=5fae2e13bcbc4f1ad299802025c1dc2e}{%
-           family={{SpareRoom}},
-           familyi={S\bibinitperiod}}}%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={{Google}},
+           familyi={G\bibinitperiod}}}%
       }
-      \strng{namehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{fullhash}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{fullhashraw}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{bibnamehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{authorbibnamehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{authornamehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{authorfullhash}{5fae2e13bcbc4f1ad299802025c1dc2e}
-      \strng{authorfullhashraw}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{SpareRoom}
+      \field{title}{Material Design 3}
       \field{year}{2026}
       \true{nocite}
       \verb{urlraw}
-      \verb https://www.spareroom.com/
+      \verb https://m3.material.io
       \endverb
       \verb{url}
-      \verb https://www.spareroom.com/
-      \endverb
-    \endentry
-    \entry{postman}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=6f061e1cad5e2783cea0b2976ed2f4c3}{%
-           family={{Postman}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{fullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{fullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{bibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{authorbibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{authornamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{authorfullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \strng{authorfullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Postman API Platform}
-      \field{year}{2026}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.postman.com/
-      \endverb
-      \verb{url}
-      \verb https://www.postman.com/
-      \endverb
-    \endentry
-    \entry{figma}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=a86fc3430821f57f16c0c8b000acf401}{%
-           family={{Figma}},
-           familyi={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{fullhash}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{fullhashraw}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{bibnamehash}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{authorbibnamehash}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{authornamehash}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{authorfullhash}{a86fc3430821f57f16c0c8b000acf401}
-      \strng{authorfullhashraw}{a86fc3430821f57f16c0c8b000acf401}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Figma Design Tool}
-      \field{year}{2026}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.figma.com/
-      \endverb
-      \verb{url}
-      \verb https://www.figma.com/
+      \verb https://m3.material.io
       \endverb
     \endentry
   \enddatalist

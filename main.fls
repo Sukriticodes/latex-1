@@ -503,6 +503,7 @@ INPUT .\sections\02_literature_review.tex
 INPUT .\sections\02_literature_review.tex
 INPUT sections\02_literature_review.tex
 INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Bold-tlf-t1.tfm
+INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Italic-tlf-t1.tfm
 INPUT .\sections\03_methodology.tex
 INPUT .\sections\03_methodology.tex
 OUTPUT sections\03_methodology.aux
@@ -571,9 +572,6 @@ OUTPUT sections\04_epilogue.aux
 INPUT .\sections\04_epilogue.tex
 INPUT .\sections\04_epilogue.tex
 INPUT sections\04_epilogue.tex
-INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Italic-tlf-t1.tfm
-INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Regular-tlf-sc-t1.tfm
-INPUT C:\Users\NITRO\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newtx\ntx-ec-tlf-pc.enc
 INPUT .\sections\05_appendix.tex
 INPUT .\sections\05_appendix.tex
 INPUT .\sections\05_appendix.tex

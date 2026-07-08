@@ -1,17 +1,33 @@
 \section{Literature Review}
 
-\subsection{Recommendation and Matching Systems}
-Recommendation systems are used to suggest suitable people, items, or services based on user preferences and behavior. In social applications, they help users find people with similar interests and lifestyles. TRIBAL uses this concept to recommend compatible roommates and activity partners. Since a large dataset is not available for this minor project, a rule-based weighted matching system is used instead of machine learning.
+\subsection{Foundations of Recommendation and Matching Systems}
 
-\subsection{Roommate Matching Systems}
-Existing roommate matching systems help users find roommates based on preferences such as budget, food habits, cleanliness, sleep schedule, and lifestyle. These systems show that roommate compatibility depends on more than just room availability. However, most roommate matching systems only focus on finding rooms or roommates and do not include activity discovery, events, or community-building features.
+Recommendation and matching systems have become increasingly important in helping users identify suitable people, resources, or activities based on their preferences. In social networking environments, recommendation techniques are commonly used to reduce information overload by analyzing user interests, behaviors, and contextual information. Event recommendation systems further extend these techniques by considering factors such as user preferences, social relationships, and event characteristics to recommend suitable activities. Liao \textit{et al.} proposed an intelligent group event recommendation system that combines user interests with social network information to improve the quality of event recommendations for groups rather than individuals \cite{liao2016}.
 
-\subsection{ Event and Activity Recommendation}
-Event recommendation systems help users discover activities based on interests, location, or user behavior. These systems are useful for connecting people with similar hobbies in real life. TRIBAL follows this idea by allowing users to create, browse, and join local events. However, instead of using complex location tracking, TRIBAL uses interest-based event discovery, which is simpler and more suitable for this project.
+\subsection{Roommate Matching and Preference Modeling}
 
-\subsection{Review of Existing Platforms}
-Platforms like Roomster, Roomi, and SpareRoom focus mainly on roommate searching, while Meetup and Bumble BFF focus on social connection and activity discovery. These platforms solve only one part of the problem. In Nepal, many users still depend on Facebook groups or personal contacts, which lack proper compatibility checking, verification, and structured matching.
+Roommate matching is a one-sided matching problem in which individuals are paired based on mutual compatibility rather than belonging to two separate groups. Traditional roommate matching approaches primarily focus on matching individuals according to their preferences. However, the quality of accommodation also plays a significant role in user satisfaction.
+
+Hosseini \textit{et al.} extended the traditional roommate matching problem by jointly considering both roommate assignments and room allocations. Their work introduces strategyproof mechanisms that ensure users cannot obtain a better outcome by misrepresenting their preferences. The study highlights that both roommate compatibility and room quality contribute to an effective matching outcome and should therefore be considered together during the allocation process \cite{hosseini2025}.
+
+\subsection{Experimental Studies on Roommate Matching}
+
+While many roommate matching algorithms have been studied theoretically, fewer studies investigate how such mechanisms perform in practice. Molis and Veszteg conducted experimental research on the roommate problem by observing participant behavior during decentralized matching processes. Their findings demonstrate that participants generally attempt to improve their current matches through mutually beneficial exchanges until a stable configuration is reached. The study provides valuable insights into how theoretical matching models behave under realistic conditions and emphasizes the importance of user preferences in achieving stable roommate assignments \cite{molis2023}.
+
+\subsection{Event-Based Social Networking}
+
+Beyond roommate allocation, modern student communities benefit from platforms that encourage social interaction and participation in events. Event recommendation systems help users discover activities that match their interests while also strengthening community engagement.
+
+The intelligent recommendation framework proposed by Liao \textit{et al.} incorporates both user preferences and social relationships when recommending group events. By considering multiple users simultaneously, the system produces recommendations that better reflect collective interests than traditional individual recommendation methods. This demonstrates the potential of integrating recommendation techniques into social networking platforms designed for students and shared communities \cite{liao2016}.
+
+\subsection{Review of Existing Solutions}
+
+Existing roommate matching platforms primarily focus on helping users find accommodation or compatible roommates. Although these systems support profile matching and preference filtering, they generally do not provide integrated features that promote long-term social interaction after users have been matched.
+
+Similarly, event recommendation platforms concentrate on suggesting activities based on user interests but do not address roommate compatibility or housing allocation. The literature therefore indicates that roommate matching and event recommendation have largely been studied as separate research problems, with limited integration between the two domains \cite{hosseini2025,liao2016,molis2023}.
 
 \subsection{Research Gap}
-From the reviewed systems, it can be seen that existing platforms usually focus separately on roommate matching, friend discovery, or event participation. There is a lack of a single mobile application that combines compatible roommate matching, activity partner discovery, local events, and secure chat. TRIBAL addresses this gap by using a weighted compatibility scoring algorithm based on lifestyle and interest-related onboarding answers.
 
+The reviewed literature demonstrates significant progress in both roommate matching and group event recommendation. Hosseini \textit{et al.} address the challenge of jointly matching roommates and rooms through strategyproof mechanisms, while Liao \textit{et al.} improve social engagement using intelligent group event recommendation techniques. Molis and Veszteg provide experimental evidence supporting the practical behavior of roommate matching systems.
+
+However, existing studies do not present a unified platform that combines roommate compatibility, accommodation preferences, social networking, event recommendations, and real-time communication within a single system. This gap motivates the development of \textbf{TRIBAL}, which integrates roommate matching, community interaction, event participation, and communication features into one application to improve both residential compatibility and social engagement among students.
