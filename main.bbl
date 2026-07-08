@@ -57,6 +57,7 @@
       \field{journaltitle}{Jiangxi University of Finance and Economics}
       \field{title}{An Intelligent Group Event Recommendation System in Social Networks}
       \field{year}{2016}
+      \keyw{reference}
     \endentry
     \entry{hosseini2025}{inproceedings}{}{}
       \name{author}{3}{}{%
@@ -91,6 +92,7 @@
       \field{booktitle}{Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25)}
       \field{title}{Strategyproof Matching of Roommates and Rooms}
       \field{year}{2025}
+      \keyw{reference}
     \endentry
     \entry{molis2023}{article}{}{}
       \name{author}{2}{}{%
@@ -121,6 +123,7 @@
       \field{note}{Waseda University}
       \field{title}{Experimental Results on the Roommate Problem}
       \field{year}{2023}
+      \keyw{reference}
     \endentry
     \entry{pressman}{book}{}{}
       \name{author}{2}{}{%
@@ -154,6 +157,7 @@
       \field{title}{Software Engineering: A Practitioner's Approach}
       \field{year}{2019}
       \true{nocite}
+      \keyw{bibliography}
     \endentry
     \entry{elmasri}{book}{}{}
       \name{author}{2}{}{%
@@ -187,6 +191,7 @@
       \field{title}{Fundamentals of Database Systems}
       \field{year}{2017}
       \true{nocite}
+      \keyw{bibliography}
     \endentry
     \entry{flutter_docs}{online}{}{}
       \name{author}{1}{}{%
@@ -215,6 +220,7 @@
       \verb{url}
       \verb https://docs.flutter.dev
       \endverb
+      \keyw{bibliography}
     \endentry
     \entry{django_docs}{online}{}{}
       \name{author}{1}{}{%
@@ -243,6 +249,7 @@
       \verb{url}
       \verb https://docs.djangoproject.com
       \endverb
+      \keyw{bibliography}
     \endentry
     \entry{material_design}{online}{}{}
       \name{author}{1}{}{%
@@ -271,6 +278,7 @@
       \verb{url}
       \verb https://m3.material.io
       \endverb
+      \keyw{bibliography}
     \endentry
   \enddatalist
 \endrefsection

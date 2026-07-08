@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.28)  8 JUL 2026 19:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.28)  8 JUL 2026 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1323,56 +1323,56 @@ Package biblatex Info: ... and expl3
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 103.
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 104.
 
 (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/newtx\t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 103.
+(Font)              scaled to size 12.0pt on input line 104.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (main.aux (sections/01_introduction.aux) (sections/02_literature_review.aux) (sections/03_methodology.aux) (sections/04_epilogue.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 103.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 103.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 104.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 104.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 103.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 103.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 104.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 104.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 103.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 103.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 104.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 104.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 103.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 103.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 104.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 104.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count547
@@ -1394,15 +1394,15 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@mv@tabular=\count553
 \c@mv@boldtabular=\count554
-LaTeX Info: Command `\dddot' is already robust on input line 103.
-LaTeX Info: Command `\ddddot' is already robust on input line 103.
-LaTeX Info: Redefining \microtypecontext on input line 103.
-Package microtype Info: Applying patch `item' on input line 103.
-Package microtype Info: Applying patch `toc' on input line 103.
-Package microtype Info: Applying patch `eqnum' on input line 103.
-Package microtype Info: Applying patch `footnote' on input line 103.
-Package microtype Info: Applying patch `verbatim' on input line 103.
-LaTeX Info: Redefining \microtypesetup on input line 103.
+LaTeX Info: Command `\dddot' is already robust on input line 104.
+LaTeX Info: Command `\ddddot' is already robust on input line 104.
+LaTeX Info: Redefining \microtypecontext on input line 104.
+Package microtype Info: Applying patch `item' on input line 104.
+Package microtype Info: Applying patch `toc' on input line 104.
+Package microtype Info: Applying patch `eqnum' on input line 104.
+Package microtype Info: Applying patch `footnote' on input line 104.
+Package microtype Info: Applying patch `verbatim' on input line 104.
+LaTeX Info: Redefining \microtypesetup on input line 104.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1420,7 +1420,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 103.
+Package hyperref Info: Link coloring ON on input line 104.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -1434,8 +1434,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 103.
-Package biblatex Info: Reference segment=0 on input line 103.
+Package biblatex Info: Reference section=0 on input line 104.
+Package biblatex Info: Reference segment=0 on input line 104.
  (sections/00_coverpage.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 4.
@@ -1577,7 +1577,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 
  (sections/03_methodology.tex
 Chapter 2.
-<images/process.png, id=177, 449.68pt x 384.43625pt>
+<images/process.png, id=179, 449.68pt x 384.43625pt>
 File: images/process.png Graphic file (type png)
 <use images/process.png>
 Package pdftex.def Info: images/process.png  used on input line 29.
@@ -1588,7 +1588,7 @@ Package pdftex.def Info: images/process.png  used on input line 29.
 
 
 ]
-<images/system.png, id=183, 2077.7625pt x 1051.93pt>
+<images/system.png, id=185, 2077.7625pt x 1051.93pt>
 File: images/system.png Graphic file (type png)
 <use images/system.png>
 Package pdftex.def Info: images/system.png  used on input line 47.
@@ -1601,66 +1601,60 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
  [10] [11]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 146.
-
-Overfull \hbox (35.64551pt too wide) detected at line 173
-[][] 
- []
-
-[12] [13]
-Overfull \vbox (62.86284pt too high) has occurred while \output is active []
-
- [14{C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
-<images/flowchart.png, id=232, 2093.8225pt x 1067.99pt>
+<images/flowchart.png, id=211, 2093.8225pt x 1067.99pt>
 File: images/flowchart.png Graphic file (type png)
 <use images/flowchart.png>
-Package pdftex.def Info: images/flowchart.png  used on input line 190.
+Package pdftex.def Info: images/flowchart.png  used on input line 178.
 (pdftex.def)             Requested size: 1206.39746pt x 615.3606pt.
- [15] [16 <./images/flowchart.png>]
-<images/class.png, id=243, 2077.7625pt x 1051.93pt>
+ [12{C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] [13 <./images/flowchart.png>]
+<images/class.png, id=238, 2077.7625pt x 1051.93pt>
 File: images/class.png Graphic file (type png)
 <use images/class.png>
-Package pdftex.def Info: images/class.png  used on input line 206.
+Package pdftex.def Info: images/class.png  used on input line 194.
 (pdftex.def)             Requested size: 624.0pt x 315.9185pt.
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 208.
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 196.
  (C:\Users\NITRO\AppData\Local\Programs\MiKTeX\tex/latex/newtx\t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 208.
+(Font)              scaled to size 12.0pt on input line 196.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ntxtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [17 <./images/class.png>]
-<images/sequence.png, id=251, 2093.8225pt x 1067.99pt>
+ [14 <./images/class.png>]
+<images/sequence.png, id=245, 2093.8225pt x 1067.99pt>
 File: images/sequence.png Graphic file (type png)
 <use images/sequence.png>
-Package pdftex.def Info: images/sequence.png  used on input line 222.
+Package pdftex.def Info: images/sequence.png  used on input line 210.
 (pdftex.def)             Requested size: 790.39746pt x 403.15155pt.
- [18] [19 <./images/sequence.png>]
-<images/user_flow.png, id=263, 2077.7625pt x 1051.93pt>
+ [15] [16 <./images/sequence.png>]
+<images/user_flow.png, id=257, 2077.7625pt x 1051.93pt>
 File: images/user_flow.png Graphic file (type png)
 <use images/user_flow.png>
-Package pdftex.def Info: images/user_flow.png  used on input line 238.
+Package pdftex.def Info: images/user_flow.png  used on input line 226.
 (pdftex.def)             Requested size: 956.80127pt x 484.4073pt.
- [20 <./images/user_flow.png>]) [21]
+ [17 <./images/user_flow.png>]) [18]
 \openout2 = `sections/04_epilogue.aux'.
 
  (sections/04_epilogue.tex
 Chapter 3.
-[22
+[19
 
 
 
 
-]) [23]
-Overfull \hbox (15.5817pt too wide) in paragraph at lines 136--136
+]) [20] [21
+
+
+
+
+]
+Overfull \hbox (15.5817pt too wide) in paragraph at lines 144--144
 []\T1/ntxtlf/m/n/12 (-20) Django Soft-ware Foun-da-tion. ^^P  Django doc-u-men-ta-tion. ^^Qhttps://docs.djangoproject.com. 
  []
 
-[24
-
-
+[22
 
 
 ] (sections/05_appendix.tex
@@ -1684,20 +1678,20 @@ File: images/ss/ss4.png Graphic file (type png)
 <use images/ss/ss4.png>
 Package pdftex.def Info: images/ss/ss4.png  used on input line 35.
 (pdftex.def)             Requested size: 116.48247pt x 291.01746pt.
- [25
+ [23
 
  <./images/ss/ss1.png> <./images/ss/ss2.png>]
-<images/ss/ss5.png, id=306, 184.89075pt x 467.94826pt>
+<images/ss/ss5.png, id=307, 184.89075pt x 467.94826pt>
 File: images/ss/ss5.png Graphic file (type png)
 <use images/ss/ss5.png>
 Package pdftex.def Info: images/ss/ss5.png  used on input line 47.
 (pdftex.def)             Requested size: 116.48247pt x 294.8161pt.
-<images/ss/ss6.png, id=307, 184.2885pt x 467.94826pt>
+<images/ss/ss6.png, id=308, 184.2885pt x 467.94826pt>
 File: images/ss/ss6.png Graphic file (type png)
 <use images/ss/ss6.png>
 Package pdftex.def Info: images/ss/ss6.png  used on input line 54.
 (pdftex.def)             Requested size: 116.48247pt x 295.78004pt.
-) [26 <./images/ss/ss3.png> <./images/ss/ss4.png> <./images/ss/ss5.png> <./images/ss/ss6.png>]
+) [24 <./images/ss/ss3.png> <./images/ss/ss4.png> <./images/ss/ss5.png> <./images/ss/ss6.png>]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1717,17 +1711,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42068 strings out of 467871
- 776958 string characters out of 5418376
- 1668196 words of memory out of 5000000
- 70062 multiletter control sequences out of 15000+600000
+ 42097 strings out of 467871
+ 777832 string characters out of 5418376
+ 1668471 words of memory out of 5000000
+ 70085 multiletter control sequences out of 15000+600000
  687653 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,13n,117p,1331b,1469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,13n,117p,1331b,1474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/NITRO/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (34 pages, 1543095 bytes).
+Output written on main.pdf (32 pages, 1543455 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 31102 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
+ 31110 words of extra memory for PDF output out of 35830 (max. 10000000)
 

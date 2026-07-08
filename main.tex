@@ -94,7 +94,8 @@
 \usepackage[
     backend=biber,
     style=ieee,
-    sorting=none
+    sorting=none,
+    defernumbers=true
 ]{biblatex}
 \DeclareFieldFormat{url}{#1}
 \addbibresource{references.bib}
@@ -132,8 +133,15 @@
 \backmatter
 \emergencystretch=1em
 
+% Print References first (from references.bib, keyword=reference)
 \nocite{*}
-\printbibliography[heading=bibintoc, title={References and Bibliography}]
+\printbibliography[heading=bibintoc, title={References}, keyword=reference]
+
+% Clear page for Bibliography
+\clearpage
+
+% Print Bibliography (from bibliography.bib, keyword=bibliography)
+\printbibliography[heading=bibintoc, title={Bibliography}, keyword=bibliography]
 
 \newpage
 \input{sections/05_appendix}

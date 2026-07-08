@@ -137,7 +137,7 @@ Opposite cleanliness extremes (very messy vs. very strict) & Score significantly
 When a deal breaker condition is detected, the algorithm does not let the final score go above a fixed low ceiling, even if all other factors match well. This makes sure that users are not shown as highly compatible with someone they have a fundamental lifestyle conflict with.
 
 \subsection{Algorithm Steps}
-\begin{algorithm}[H]
+\begin{algorithm}[!htb]
 \caption{Roommate Compatibility Scoring Algorithm}
 \label{alg:roommate-matching}
 \KwIn{Current user's profile, Candidate roommate profiles}
@@ -149,21 +149,9 @@ Initialize an empty list named CompatibleCandidates\;
 
 \For{each candidate profile in the candidate list}{
     Set $\text{total\_score} \leftarrow 0$\;
-    Compute the compatibility score for each matching criterion:
-    \begin{itemize}
-        \item Cleanliness preference
-        \item Budget preference
-        \item Sleep schedule
-        \item Noise tolerance
-        \item Smoking preference
-        \item Guest preference
-        \item Shared interests
-        \item Study habits
-        \item Food preference
-        \item Drinking preference
-    \end{itemize}\;
+    Compute compatibility scores for: cleanliness, budget, sleep schedule, noise tolerance, smoking preference, guest preference, shared interests, study habits, food preference, drinking preference\;
     Calculate the total compatibility score by summing all individual criterion scores\;
-    Check for deal-breaker conditions (e.g., incompatible smoking preference or budget mismatch). If a deal-breaker exists, reduce the total score or apply a predefined score cap\;
+    Check for deal-breaker conditions (incompatible smoking, extreme budget mismatch, opposite cleanliness extremes); apply score cap or reduction if needed\;
     Round the final compatibility score\;
     Store the candidate profile together with its final compatibility score in CompatibleCandidates\;
 }
