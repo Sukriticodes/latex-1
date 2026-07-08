@@ -10,29 +10,32 @@
 \contentsline {section}{\numberline {1.2}Problem Statements}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Objectives}{2}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Scope and Applications}{2}{section.1.4}%
-\contentsline {chapter}{\chapternumberline {2}Literature Review}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Roomster}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Bumble BFF}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Meetup}{4}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Facebook Groups}{5}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Roomi}{5}{section.2.5}%
-\contentsline {section}{\numberline {2.6}SpareRoom}{5}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Summary of Limitations}{5}{section.2.7}%
-\contentsline {section}{\numberline {2.8}How Tribal is different}{6}{section.2.8}%
-\contentsline {chapter}{\chapternumberline {3}Methodology}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Process Model}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}System Block Diagram}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Algorithm}{9}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Roommate Compatibility Scoring Algorithm}{9}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Deal Breakers}{10}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Final Score Calculation}{11}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Flowchart}{12}{section.3.4}%
-\contentsline {section}{\numberline {3.5}UML Diagrams}{12}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Tools Used}{13}{section.3.6}%
-\contentsline {chapter}{\chapternumberline {4}Epilogue}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tasks Completed}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Remaining Tasks}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Updated Gantt Chart}{15}{section.4.3}%
-\contentsline {chapter}{References}{16}{section*.20}%
-\contentsline {chapter}{Bibliography}{17}{section*.23}%
-\contentsline {chapter}{Screenshots}{18}{chapter*.25}%
+\contentsline {section}{\numberline {1.5}Literature Review}{4}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Social Dynamics and the Formation of Authentic Groups}{4}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Limitations of Traditional Matching Frameworks}{4}{subsection.1.5.2}%
+\contentsline {subsubsection}{The Vocabulary Mismatch and Cold-Start Problem}{4}{section*.10}%
+\contentsline {subsubsection}{Syntactic vs. Semantic Matching Paradigms}{4}{section*.11}%
+\contentsline {subsection}{\numberline {1.5.3}Digital Platforms and Real-Time Interaction}{5}{subsection.1.5.3}%
+\contentsline {subsubsection}{The Efficacy of Mobile-Based Interventions}{5}{section*.12}%
+\contentsline {subsubsection}{Building Trust through Modular Architectures}{5}{section*.13}%
+\contentsline {subsection}{\numberline {1.5.4}Conclusion}{5}{subsection.1.5.4}%
+\contentsline {chapter}{\chapternumberline {2}Methodology}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Process Model}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}System Block Diagram}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Algorithm}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Roommate Compatibility Scoring Algorithm}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Deal Breakers}{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Final Score Calculation}{11}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Flowchart}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}UML Diagrams}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Class Diagram}{13}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{15}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}User Flow Diagram}{16}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Tools Used}{17}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {3}Epilogue}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tasks Completed}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Remaining Tasks}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Updated Gantt Chart}{19}{section.3.3}%
+\contentsline {chapter}{References}{20}{section*.25}%
+\contentsline {chapter}{Bibliography}{21}{section*.28}%
+\contentsline {chapter}{Screenshots}{22}{chapter*.30}%

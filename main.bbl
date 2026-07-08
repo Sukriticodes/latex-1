@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,5 +16,259 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}\enddatalist
+
+\refsection{1}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Manchanda2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5b71ba05e9565ded5fba688929c147ca}{%
+           family={Manchanda},
+           familyi={M\bibinitperiod},
+           given={Tanya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a4effe94cb5c4b53d1bb437f911e7792}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1a914914179b2b4bd92fc4006bccb46d}{%
+           family={Fazel},
+           familyi={F\bibinitperiod},
+           given={Mina},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5d7111056a10899b70bee08040e9daa}
+      \strng{fullhash}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \strng{fullhashraw}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \strng{bibnamehash}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \strng{authorbibnamehash}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \strng{authornamehash}{a5d7111056a10899b70bee08040e9daa}
+      \strng{authorfullhash}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \strng{authorfullhashraw}{6e588979d7bb1cbeab24a17a58ec57b7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Environmental Research and Public Health}
+      \field{number}{3}
+      \field{title}{Investigating the Role of Friendship Interventions on the Mental Health Outcomes of Adolescents: A Scoping Review of Range and a Systematic Review of Effectiveness}
+      \field{volume}{20}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{2160}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ijerph20032160
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/ijerph20032160
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/ijerph20032160
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{2}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{roomster}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b3aead2d53dd33421fb94ba33d81c21a}{%
+           family={{Roomster}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{fullhash}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{fullhashraw}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{bibnamehash}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{authorbibnamehash}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{authornamehash}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{authorfullhash}{b3aead2d53dd33421fb94ba33d81c21a}
+      \strng{authorfullhashraw}{b3aead2d53dd33421fb94ba33d81c21a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Roomster}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.roomster.com/
+      \endverb
+      \verb{url}
+      \verb https://www.roomster.com/
+      \endverb
+    \endentry
+    \entry{bumble_bff}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cd297793ff8edde8855221de9ec052d6}{%
+           family={{Bumble}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd297793ff8edde8855221de9ec052d6}
+      \strng{fullhash}{cd297793ff8edde8855221de9ec052d6}
+      \strng{fullhashraw}{cd297793ff8edde8855221de9ec052d6}
+      \strng{bibnamehash}{cd297793ff8edde8855221de9ec052d6}
+      \strng{authorbibnamehash}{cd297793ff8edde8855221de9ec052d6}
+      \strng{authornamehash}{cd297793ff8edde8855221de9ec052d6}
+      \strng{authorfullhash}{cd297793ff8edde8855221de9ec052d6}
+      \strng{authorfullhashraw}{cd297793ff8edde8855221de9ec052d6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bumble BFF}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://bumble.com/bff
+      \endverb
+      \verb{url}
+      \verb https://bumble.com/bff
+      \endverb
+    \endentry
+    \entry{meetup}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b308877945e9d553550011b5891cc26c}{%
+           family={{Meetup}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b308877945e9d553550011b5891cc26c}
+      \strng{fullhash}{b308877945e9d553550011b5891cc26c}
+      \strng{fullhashraw}{b308877945e9d553550011b5891cc26c}
+      \strng{bibnamehash}{b308877945e9d553550011b5891cc26c}
+      \strng{authorbibnamehash}{b308877945e9d553550011b5891cc26c}
+      \strng{authornamehash}{b308877945e9d553550011b5891cc26c}
+      \strng{authorfullhash}{b308877945e9d553550011b5891cc26c}
+      \strng{authorfullhashraw}{b308877945e9d553550011b5891cc26c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Meetup}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.meetup.com/
+      \endverb
+      \verb{url}
+      \verb https://www.meetup.com/
+      \endverb
+    \endentry
+    \entry{roomi}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cb6a9c22bad57a6090cefa9122cc81cb}{%
+           family={{Roomi}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{fullhash}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{fullhashraw}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{bibnamehash}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{authorbibnamehash}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{authornamehash}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{authorfullhash}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \strng{authorfullhashraw}{cb6a9c22bad57a6090cefa9122cc81cb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Roomi}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.roomiapp.com/
+      \endverb
+      \verb{url}
+      \verb https://www.roomiapp.com/
+      \endverb
+    \endentry
+    \entry{spareroom}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=5fae2e13bcbc4f1ad299802025c1dc2e}{%
+           family={{SpareRoom}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{fullhash}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{fullhashraw}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{bibnamehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{authorbibnamehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{authornamehash}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{authorfullhash}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \strng{authorfullhashraw}{5fae2e13bcbc4f1ad299802025c1dc2e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SpareRoom}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.spareroom.com/
+      \endverb
+      \verb{url}
+      \verb https://www.spareroom.com/
+      \endverb
+    \endentry
+    \entry{postman}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6f061e1cad5e2783cea0b2976ed2f4c3}{%
+           family={{Postman}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{fullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{fullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{bibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorbibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authornamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorfullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorfullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Postman API Platform}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.postman.com/
+      \endverb
+      \verb{url}
+      \verb https://www.postman.com/
+      \endverb
+    \endentry
+    \entry{figma}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a86fc3430821f57f16c0c8b000acf401}{%
+           family={{Figma}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{fullhash}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{fullhashraw}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{bibnamehash}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{authorbibnamehash}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{authornamehash}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{authorfullhash}{a86fc3430821f57f16c0c8b000acf401}
+      \strng{authorfullhashraw}{a86fc3430821f57f16c0c8b000acf401}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Figma Design Tool}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.figma.com/
+      \endverb
+      \verb{url}
+      \verb https://www.figma.com/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
+

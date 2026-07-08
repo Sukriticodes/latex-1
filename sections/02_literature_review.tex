@@ -1,78 +1,21 @@
-\chapter{Literature Review}
-Before starting the design of TRIBAL, the team looked at some existing applications that
-solve similar problems. This helped the team understand what features are already
-available, what is missing, and how TRIBAL can be different from these platforms. This
-chapter looks at a few popular apps that are related to roommate finding and activity
-matching, and explains their limitations.
+\section{Literature Review}
 
-\section{Roomster}
-Roomster is a roommate and room-finding platform that is mainly used in the United
-States and a few other countries. It allows users to post listings for rooms and search for
-roommates based on location and budget. However, Roomster does not have any real
-compatibility matching system. It mostly works like a classified listing site where users
-browse profiles and contact each other manually. There is no scoring system to tell a user
-how well they might get along with a potential roommate based on lifestyle habits like
-cleanliness, sleep schedule, or smoking
+\subsection{Social Dynamics and the Formation of Authentic Groups}
+The core objective of project \textbf{TRIBAL} is to facilitate the creation of \textbf{authentic social groups} in urban environments. In the field of developmental and social psychology, these groups are defined as voluntary social relations that provide essential "cognitive and social scaffolding". Research indicates that individuals, especially in transitional life stages, prioritize these peer relationships over formal or professional interactions because they offer a unique sense of intimacy, trust, and validation. In a new city, the absence of a pre-existing social circle can lead to isolation and psychological distress. By integrating roommate matching with local activity groups, \textbf{TRIBAL} aims to replicate the "mutual support" systems identified in literature, where individuals voluntarily come together to address common needs and share social concerns.
 
+\subsection{Limitations of Traditional Matching Frameworks}
+\subsubsection{The Vocabulary Mismatch and Cold-Start Problem}
+Existing digital platforms for roommate and social discovery frequently struggle with two primary technical hurdles: \textbf{vocabulary mismatch} and the \textbf{cold-start problem}. Vocabulary mismatch occurs when a system fails to link relevant users because their self-descriptions or lifestyle tags use synonymous but non-identical terms (e.g., "early riser" vs. "morning person"). Furthermore, many collaborative filtering systems suffer from a cold-start, meaning they cannot provide accurate recommendations for new users who have not yet interacted with the platform. \textbf{TRIBAL} addresses these issues by implementing a \textbf{compatibility scoring algorithm} based on structured lifestyle questions—such as sleep schedules, cleanliness, and pet preferences—which serves as a primary data ingestion layer to bypass the lack of historical interaction data.
 
-\section{Bumble BFF}
-Bumble BFF is a friend-finding mode of the popular Bumble dating app. It uses a swipebased system where users can like or pass on other profiles to find friends with similar
-interests. While this works well for general friend matching, it is not designed for
-roommate finding. Bumble BFF also does not collect detailed lifestyle information like
-budget range or sleep schedule, which are important factors when two people are going to
-live together.
+\subsubsection{Syntactic vs. Semantic Matching Paradigms}
+Traditional systems often rely on exact lexical matching, which lacks the depth required to capture the "semantic essence" of human compatibility. Recent advancements in \textbf{Transformer architectures} have revolutionized this field by replacing sequential processing with \textbf{self-attention mechanisms}. This allows systems to represent user profiles as \textbf{dense numerical vectors} in a high-dimensional space. By calculating \textbf{cosine similarity} between these vectors, a platform can identify conceptual alignment between potential roommates even when their terminology differs. \textbf{TRIBAL's} backend logic aligns with this modern shift toward meaning-based rather than symbol-based matching.
 
-\section{Meetup}
-Meetup is a platform mainly used to organize and join group activities and events based
-on shared interests. It works well for finding activity partners but does not have any
-roommate matching feature at all. Meetup is also not very popular in Nepal, and most
-local activity groups still rely on Facebook groups or word of mouth instead.
+\subsection{Digital Platforms and Real-Time Interaction}
+\subsubsection{The Efficacy of Mobile-Based Interventions}
+The transition to mobile and remote platforms has proven highly effective for fostering social connectedness. Studies on \textbf{mHealth} and remote social tools demonstrate that digital delivery—such as \textbf{Flutter-based} mobile applications—can provide scalable support by equipping users with information and tools to manage their social environments. The use of real-time communication is a critical "active ingredient" in maintaining these digital ties. \textbf{TRIBAL} leverages this by implementing \textbf{WebSockets} and \textbf{Django Channels}, allowing for the instantaneous exchange of information that mimics the fluid nature of face-to-face social interactions.
 
-\section{Facebook Groups}
-Facebook Groups are widely used in Nepal for both roommate searching and activity
-planning. Many people post in groups like “Room for Rent Kathmandu” or “Hiking
-Buddies Nepal” to find roommates or activity partners. The biggest problem with this
-method is that there is no structured system behind it. Anyone can post anything, there is
-no compatibility check, and there is no way to verify whether the listed information is
-true. This often leads to mismatched roommates and unsafe meetups with strangers.
+\subsubsection{Building Trust through Modular Architectures}
+Creating a "trusted community" requires a secure and modular technical framework. Literature on modular LLM and application orchestration suggests that utilizing a robust backend—similar to \textbf{TRIBAL's} use of \textbf{Django} and \textbf{PostgreSQL}—ensures that recommendations are factually grounded and data-secure. The integration of \textbf{JWT tokens} for authentication provides the necessary security layer to foster a "trusted" environment. By combining a \textbf{vectorized compatibility engine} with real-time social networking, \textbf{TRIBAL} addresses a substantial gap where previous platforms focused only on isolated facets of the urban relocation experience.
 
-\section{Roomi}
-Roomi is another roommate-finding application that allows users to filter listings by
-location, price, and a few basic preferences. It is more focused on the United States
-market and is not commonly used in Nepal. Like Roomster, Roomi does not use any
-weighted scoring system, so users still have to manually go through profiles and decide
-compatibility on their own.
-
-\section{SpareRoom}
-SpareRoom is a roommate listing platform used mostly in the United Kingdom. It allows
-detailed filtering of listings, such as gender preference and smoking status, but the
-matching is still based on simple filters rather than an actual compatibility score. There is
-no algorithm that combines multiple lifestyle factors into a single match percentage.
-
-\section{Summary of Limitations}
-After looking at these platforms, the team noticed a few common limitations:
-\begin{itemize}
-\item Most platforms either focus only on roommate listing or only on activity and
-event matching, but not both.
-\item None of these apps use a proper compatibility scoring system that takes multiple
-lifestyle factors into account at once.
-\item Apps that are popular internationally, like Roomster, Roomi, and SpareRoom, are
-not commonly used or trusted in Nepal.
-\item Local methods like Facebook groups do not provide any safety or compatibility
-checks, which can lead to bad roommate experiences.
-\item There is no platform that allows users to both find a compatible roommate and
-discover local activity partners from one single application.
-\end{itemize}
-\section{How Tribal is different}
-TRIBAL tries to solve these problems by combining roommate matching and activity and
-event discovery into a single mobile application. Instead of relying on manual browsing,
-TRIBAL uses a weighted compatibility scoring algorithm that compares onboarding
-answers from two users and generates a compatibility score out of 100. This score
-considers multiple lifestyle factors together, such as cleanliness, budget, sleep schedule,
-noise level, smoking, guests, interests, study habit, food, and drinking preference, instead
-of just one or two filters.
-By keeping the matching system rule-based instead of using machine learning, TRIBAL
-is able to give users a transparent and explainable match score. A user can see why their
-compatibility score with another person is high or low, which is something most existing
-platforms do not provide. This approach is also more practical to build and test within the
-time frame of a minor project, while still giving meaningful results to users.
+\subsection{Conclusion}
+Project \textbf{TRIBAL} bridges the gap between purely functional roommate searches and purely social networking platforms. By leveraging the psychological importance of \textbf{authentic social groups} and modern \textbf{similarity retrieval algorithms}, the application provides a comprehensive solution for individuals seeking to rebuild their social scaffolding in a new city.

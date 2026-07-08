@@ -31,32 +31,23 @@ Sprint 5.
     \label{fig:agile_process}
 \end{figure}
 
+Figure~\ref{fig:agile_process} shows the Agile development cycle that the team is following for this project. The diagram is a circular flow with six stages: Requirements, Plan \& Design, Develop, Testing, Deployment (Release), and Review (Track \& Monitor), all revolving around a central label that says ``Agile Development''. The circular arrangement shows that after each review cycle, the team loops back to plan the next set of requirements. This model fits our project well because we are working in short sprints, and after each sprint we review what was done and plan the next one based on what is remaining.
+
 
 \section{System Block Diagram}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/system.png}
-    \caption{System Block Diagram}
-    \label{fig:block_diagram}
+    \makebox[\textwidth][c]{%  
+    \begin{minipage}{2.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, keepaspectratio]{images/system.png}
+        \caption{System Block Diagram of TRIBAL}
+        \label{fig:system_block_diagram}
+    \end{minipage}%    
+    }
 \end{figure}
-The system is divided into three main layers:
-\begin{itemize}
-\item Frontend (Flutter): Handles the user interface, including onboarding,
-authentication screens, and profile setup. The frontend uses Provider for state
-management, GoRouter for navigation, and follows an MVC-based architecture.
-\item Backend (Django): Exposes REST APIs for authentication, user profiles, and
-roommate matching. The roommate matching logic lives entirely inside a single
-roommate module, which keeps the matching-related code organized and separate
-from the rest of the backend.
-\item Database (PostgreSQL): Stores user accounts, roommate profile data, and
-onboarding responses that are later used by the scoring algorithm.
-\end{itemize}
-The Flutter app communicates with the Django backend through REST APIs. JWT
-tokens are used to keep the user logged in and to secure each API request. When a user
-requests roommate matches, the request goes to the roommate module, which fetches
-relevant profiles from the database, runs the scoring algorithm, and returns a ranked list
-of compatible roommates back to the app.
+
+Figure~\ref{fig:system_block_diagram} shows the overall system architecture of TRIBAL divided into three layers. At the top is the Flutter Mobile App, which contains the User Interface with five sections: Onboarding, Authentication, Matching, Events, and Chat. Below it is the Django Backend, which handles two kinds of communication: regular REST API requests and JWT-based authentication on the left, and WebSocket connections for real-time chat on the right. Inside the Django layer, an Application Services block handles four services: User Management, Matching Engine, Event Service, and Chat Service. At the bottom is PostgreSQL, represented by a database cylinder labelled Application Database. A solid arrow connects the Flutter app to the Django backend via REST API/JWT, and a dashed arrow shows the WebSocket connection used for the chat feature. This layered structure makes it easy to understand how each part of the system is responsible for a specific job.
 
 
 \section{Algorithm}
@@ -126,7 +117,7 @@ to 0.
 Apart from the weighted scoring, the algorithm also includes a deal breaker check. Some lifestyle differences are considered serious enough that they should not simply lower the score a little, but should instead strongly affect or override the final match. For ex le, if one user is a heavy smoker and the other has explicitly said they cannot live with a smoker at all, this is treated as a deal breaker rather than just a normal mismatch. Table 3.2 lists the deal breaker rules currently used in the algorithm.
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|p{7.2cm}|p{5.8cm}|}
 \hline
 \textbf{Condition}  & \textbf{Effect on Score} \\
 \hline
@@ -148,21 +139,64 @@ Once all the individual factor match values are calculated and weighted, they ar
 \section{Flowchart}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth, keepaspectratio]{images/flowchart.png}
-    \caption{System Flowchart}
-    \label{fig:flowchart}
+    \makebox[\textwidth][c]{%
+    \begin{minipage}{2.9\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, keepaspectratio]{images/flowchart.png}
+        \caption{System Flowchart}
+        \label{fig:flowchart}
+    \end{minipage}%
+    }
 \end{figure}
-The flowchart illustrates the step-by-step operational flow of the TRIBAL system.
+Figure~\ref{fig:flowchart} shows how the roommate matching algorithm works step by step. The flowchart starts with a ``Start'' node, followed by the step ``User requests roommate matches''. After that, the system fetches the onboarding data of the requesting user from the database, and then fetches all candidate user profiles. For each candidate, the algorithm calculates the individual factor match values and then applies the factor weights. The next step is calculating the total compatibility score, after which there is a decision diamond labelled ``Deal breaker detected?''. If the answer is Yes, the score is capped at the maximum allowed value. If the answer is No, the calculated score is kept as it is. After this, the final score is rounded and all candidates are sorted by their compatibility score. Finally, the ranked list is returned to the Flutter app and the flowchart ends. This diagram helped us make sure that we had thought through all the edge cases in the algorithm before starting to code it.
 
 
 \section{UML Diagrams}
+\subsection{Class Diagram}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{images/uml.png}
-    \caption{UML Diagram}
-    \label{fig:uml_diagram}
+    \makebox[\textwidth][c]{%
+    \begin{minipage}{1.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, keepaspectratio]{images/class.png}
+        \caption{Class Diagram}
+        \label{fig:class_diagram}
+    \end{minipage}%
+    }
 \end{figure}
-The UML diagram provides an object-oriented view of the system's architecture, showing key classes and their relationships.
+Figure~\ref{fig:class_diagram} shows the class diagram for the TRIBAL system. The central class is \texttt{User}, which has four attributes: id, username, email, and password. From the \texttt{User} class, five relationships branch out. The \texttt{User} owns a \texttt{Profile} (one-to-one), which holds gender, age, bio, and location. The \texttt{Profile} further has a one-to-one relationship with a \texttt{Preferences} class, which stores the lifestyle fields used in matching: sleepSchedule, cleanliness, budget, and interests. The \texttt{User} also receives \texttt{Match} objects (one-to-many), where each \texttt{Match} holds a compatibilityScore and a matchedAt timestamp. The \texttt{User} creates or joins \texttt{Event} objects, each of which has a title, description, location, and eventDate. Finally, the \texttt{User} participates in a \texttt{ChatRoom}, which contains many \texttt{Message} objects, each with a content string and a timestamp. The \texttt{User} also has a sends relationship to \texttt{Message} directly. This diagram shows us all the data models we need to build and how they relate to each other.
+
+
+
+\subsection{Sequence Diagram}
+\begin{figure}[H]
+    \centering
+    \makebox[\textwidth][c]{%
+    \begin{minipage}{1.9\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, keepaspectratio]{images/sequence.png}
+        \caption{Sequence Diagram}
+        \label{fig:sequence_diagram}
+    \end{minipage}%
+    }
+\end{figure}
+Figure~\ref{fig:sequence_diagram} shows the sequence of interactions between the User, the Flutter App, the Django Backend, and PostgreSQL. The diagram starts with the user logging in, after which the Flutter app sends an ``Authenticate User'' request to the Django backend. The backend then sends a ``Verify Credentials'' query to PostgreSQL, which responds with User Data. Django then returns a JWT Token to the Flutter app. In the next step, the user completes onboarding, and the Flutter app sends the preferences to Django, which saves the Profile and Preferences to PostgreSQL and confirms success. When the user taps ``Find Roommates'', the Flutter app sends a ``Request Compatible Matches'' call to Django. Django retrieves all candidate profiles from PostgreSQL and then runs a self-call loop labelled ``Calculate Compatibility Scores''. The resulting ``Matching Results'' are returned to the Flutter app. After the user selects a match, the Flutter app sends a ``Request Chat'' to Django, which creates or retrieves a Chat Room from PostgreSQL and returns the Chat Room Details, after which the chat is opened. This diagram covers the full user journey from login to starting a conversation.
+
+
+
+\subsection{User Flow Diagram}
+\begin{figure}[H]
+    \centering
+    \makebox[\textwidth][c]{%
+    \begin{minipage}{2.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, keepaspectratio]{images/user_flow.png}
+        \caption{User Flow Diagram}
+        \label{fig:user_flow_diagram}
+    \end{minipage}%
+    }
+\end{figure}
+Figure~\ref{fig:user_flow_diagram} shows how a user moves through the TRIBAL application from start to finish. The flow begins with launching the app. The first decision is whether the user is an existing user or not. If not, they register an account; if yes, they go straight to Log In. After logging in, there is a second decision: whether onboarding has been completed. If not, the user is taken to Complete Onboarding, and then to Create Profile. If yes, they skip ahead. After the profile is created, the user reaches the Home Dashboard, from which five paths branch out: Find Compatible Roommates, Find Activity Partners, Browse Events, Manage Profile, and Log Out. The first two lead to View Match Details, which further leads to Start Chat. The Browse Events path leads to a decision diamond ``Join or Create Event?'', which splits into Join Event and Create Event. Both event paths and the Start Chat path converge back to Receive Notifications. The Log Out path ends the session. This diagram helped us plan the navigation structure of the app early on so that all screens are connected in a logical way.
 
 
 \section{Tools Used}

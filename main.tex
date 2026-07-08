@@ -34,8 +34,15 @@
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 \usepackage{float}
 \usepackage{forloop}
+\newcounter{loopcntr}
+\newcommand{\on}[1]{%
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{& \cellcolor{gray}}%
+}
+\newcommand{\off}[1]{%
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}%
+}
 \usepackage{tikz}
-\usetikzlibrary{tikzmark}
+\usetikzlibrary{tikzmark, shapes.geometric, arrows.meta, positioning, fit, backgrounds}
 
 \usepackage{enumitem}
 \setlist{nosep}
@@ -85,7 +92,7 @@
 \setsubsubsecheadstyle{\normalfont\fontsize{12}{15}\bfseries}
 
 \usepackage[
-    backend=bibtex,
+    backend=biber,
     style=ieee,
     sorting=none
 ]{biblatex}

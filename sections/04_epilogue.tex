@@ -36,24 +36,30 @@ The following tasks are still remaining and will be completed in the upcoming sp
 \section{Updated Gantt Chart}
 The original time schedule has been adjusted slightly based on the actual pace of development so far. The updated schedule below shows the completed sprints and the plan for the remaining weeks leading up to the final defense.
 
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|}
+
+\begin{center}
+\resizebox{1.0\textwidth}{!}{%
+\begin{tabular}{|p{0.30\textwidth}*{7}{|p{0.035\textwidth}}|!{\color{red}\vrule width 1.5pt height 5pt depth 1pt}p{0.035\textwidth}*{4}{|p{0.035\textwidth}}|}
+ \hline
+ \textbf{Tasks} & \multicolumn{12}{c|}{\textbf{Weeks}} \\
+ \hline
+ & 2 & 4 & 6 & 8 & 10 & 12 & 14 & 16 & 18 & 20 & 22 & 24 \\
+ \hline
+Requirement Analysis \on{2}\off{10} \\
+ \hline
+System Design \off{2}\on{2}\off{8} \\
+ \hline
+Implementation \off{4}\on{4}\off{4} \\
+ \hline
+Testing and Evaluation \off{7}\on{3}\off{2} \\
+ \hline
+Deployment \off{10}\on{1}\off{1} \\
+ \hline
+Monitoring\off{11}\on{1} \\
+ \hline
+Documentation \on{12} \\
 \hline
-\textbf{Task} & \textbf{Status} \\
-\hline
-Sprint 1: Requirement Analysis \& Wireframing & Completed \\
-Sprint 2: Flutter Onboarding \& Auth Screens & Completed \\
-Sprint 3: Django Backend \& Database Setup & Completed \\
-Sprint 4: Roommate Compatibility Algorithm & Completed \\
-Sprint 5: Real-Time Chat System & In Progress \\
-Sprint 6: Event Module & Planned \\
-Sprint 7: Frontend-Backend Integration Testing & Planned \\
-Sprint 8: Final Testing \& Documentation & Planned \\
-\hline
-\end{tabular}
-\caption{Gantt Chart – Updated Schedule}
-\label{table:gantt_chart}
-\end{table}
+\end{tabular}}
+\end{center}
 
 The team is currently on Sprint 5. Based on the progress made so far, the team is confident that the remaining sprints can be completed within the original 16-week timeline, with some buffer time set aside before the final defense for bug fixing and documentation.
