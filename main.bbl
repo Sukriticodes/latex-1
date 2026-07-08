@@ -122,122 +122,6 @@
       \field{title}{Experimental Results on the Roommate Problem}
       \field{year}{2023}
     \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{1}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{hosseini2025}{inproceedings}{}{}
-      \name{author}{3}{}{%
-        {{hash=d021234726e5649b048085b2d5667e57}{%
-           family={Hosseini},
-           familyi={H\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=724f67d9d9a15d6fb911984ef473bf0b}{%
-           family={Narang},
-           familyi={N\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7b82e72e46640a6021b1c6e15b764743}{%
-           family={Roy},
-           familyi={R\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{867361d0634b987f152c0e34d584c9df}
-      \strng{fullhash}{ca9cc1af32d77683e081a577ff835822}
-      \strng{fullhashraw}{ca9cc1af32d77683e081a577ff835822}
-      \strng{bibnamehash}{ca9cc1af32d77683e081a577ff835822}
-      \strng{authorbibnamehash}{ca9cc1af32d77683e081a577ff835822}
-      \strng{authornamehash}{867361d0634b987f152c0e34d584c9df}
-      \strng{authorfullhash}{ca9cc1af32d77683e081a577ff835822}
-      \strng{authorfullhashraw}{ca9cc1af32d77683e081a577ff835822}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI-25)}
-      \field{title}{Strategyproof Matching of Roommates and Rooms}
-      \field{year}{2025}
-      \true{nocite}
-    \endentry
-    \entry{liao2016}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=b624faa7396cd10ed0608971e10c5985}{%
-           family={Liao},
-           familyi={L\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=bf1afb45a50313a87b61c9f7a08f8989}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod}}}%
-        {{hash=220c19e2c9c76595f81ea1bcf915df14}{%
-           family={Xiong},
-           familyi={X\bibinitperiod},
-           given={N.\bibnamedelimi N.},
-           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=d8934d63a1883546250a27c4c64c32e6}{%
-           family={Wan},
-           familyi={W\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{d206a92f2cf0013de5064b1e2dae7fe0}
-      \strng{fullhash}{3187ce72709938d6169dd6087990fdbe}
-      \strng{fullhashraw}{3187ce72709938d6169dd6087990fdbe}
-      \strng{bibnamehash}{3187ce72709938d6169dd6087990fdbe}
-      \strng{authorbibnamehash}{3187ce72709938d6169dd6087990fdbe}
-      \strng{authornamehash}{d206a92f2cf0013de5064b1e2dae7fe0}
-      \strng{authorfullhash}{3187ce72709938d6169dd6087990fdbe}
-      \strng{authorfullhashraw}{3187ce72709938d6169dd6087990fdbe}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Jiangxi University of Finance and Economics}
-      \field{title}{An Intelligent Group Event Recommendation System in Social Networks}
-      \field{year}{2016}
-      \true{nocite}
-    \endentry
-    \entry{molis2023}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=01e9f523b5016b0de881a572f08eea1f}{%
-           family={Molis},
-           familyi={M\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=f3d0a485a329e0bd340c7f50569a0771}{%
-           family={Veszteg},
-           familyi={V\bibinitperiod},
-           given={R.\bibnamedelimi F.},
-           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{fullhash}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{fullhashraw}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{bibnamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{authorbibnamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{authornamehash}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{authorfullhash}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \strng{authorfullhashraw}{f76c65a90b054eedb92f84e3ac9ab2ff}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SSRN Electronic Journal}
-      \field{note}{Waseda University}
-      \field{title}{Experimental Results on the Roommate Problem}
-      \field{year}{2023}
-      \true{nocite}
-    \endentry
-  \enddatalist
-\endrefsection
-
-\refsection{2}
-  \datalist[entry]{none/global//global/global/global}
     \entry{pressman}{book}{}{}
       \name{author}{2}{}{%
         {{hash=4d3f81788d99cf425c4b6e0a454baab0}{%
@@ -262,8 +146,8 @@
       \strng{authornamehash}{da6ec91488daec8c3c9eddf18c78dad8}
       \strng{authorfullhash}{da6ec91488daec8c3c9eddf18c78dad8}
       \strng{authorfullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{9}
@@ -295,8 +179,8 @@
       \strng{authornamehash}{2e8829be23557c692dac07b198a7df6e}
       \strng{authorfullhash}{2e8829be23557c692dac07b198a7df6e}
       \strng{authorfullhashraw}{2e8829be23557c692dac07b198a7df6e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{7}
@@ -318,8 +202,8 @@
       \strng{authornamehash}{c047b10eee763afb6164e077cf1cc268}
       \strng{authorfullhash}{c047b10eee763afb6164e077cf1cc268}
       \strng{authorfullhashraw}{c047b10eee763afb6164e077cf1cc268}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Flutter Documentation}
@@ -346,8 +230,8 @@
       \strng{authornamehash}{f831bff1f5132f6edd2ec0e00e5b9af9}
       \strng{authorfullhash}{f831bff1f5132f6edd2ec0e00e5b9af9}
       \strng{authorfullhashraw}{f831bff1f5132f6edd2ec0e00e5b9af9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Django Documentation}
@@ -374,8 +258,8 @@
       \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
       \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
       \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Material Design 3}

@@ -136,6 +136,41 @@ Opposite cleanliness extremes (very messy vs. very strict) & Score significantly
 \end{table}
 When a deal breaker condition is detected, the algorithm does not let the final score go above a fixed low ceiling, even if all other factors match well. This makes sure that users are not shown as highly compatible with someone they have a fundamental lifestyle conflict with.
 
+\subsection{Algorithm Steps}
+\begin{algorithm}[H]
+\caption{Roommate Compatibility Scoring Algorithm}
+\label{alg:roommate-matching}
+\KwIn{Current user's profile, Candidate roommate profiles}
+\KwOut{Ranked list of compatible roommates}
+
+Retrieve the current user's onboarding responses and roommate preferences\;
+Fetch all candidate roommate profiles from the database\;
+Initialize an empty list named CompatibleCandidates\;
+
+\For{each candidate profile in the candidate list}{
+    Set $\text{total\_score} \leftarrow 0$\;
+    Compute the compatibility score for each matching criterion:
+    \begin{itemize}
+        \item Cleanliness preference
+        \item Budget preference
+        \item Sleep schedule
+        \item Noise tolerance
+        \item Smoking preference
+        \item Guest preference
+        \item Shared interests
+        \item Study habits
+        \item Food preference
+        \item Drinking preference
+    \end{itemize}\;
+    Calculate the total compatibility score by summing all individual criterion scores\;
+    Check for deal-breaker conditions (e.g., incompatible smoking preference or budget mismatch). If a deal-breaker exists, reduce the total score or apply a predefined score cap\;
+    Round the final compatibility score\;
+    Store the candidate profile together with its final compatibility score in CompatibleCandidates\;
+}
+
+Sort CompatibleCandidates in descending order based on the final compatibility score\;
+Return the sorted list as the ranked roommate recommendations\;
+\end{algorithm}
 
 \subsection{Final Score Calculation}
 Once all the individual factor match values are calculated and weighted, they are added together to get the final compatibility score. If a deal breaker is triggered, the score is capped according to the deal breaker rule before being returned to the user. The final score is then rounded to the nearest whole number and shown to the user as a percentage match out of 100. This score is what the user sees in the app when browsing potential roommates, helping them quickly understand how compatible they may be with someone before starting a conversation.

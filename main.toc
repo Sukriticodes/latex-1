@@ -23,17 +23,17 @@
 \contentsline {section}{\numberline {2.3}Algorithm}{10}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Roommate Compatibility Scoring Algorithm}{10}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Deal Breakers}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Final Score Calculation}{12}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Flowchart}{13}{section.2.4}%
-\contentsline {section}{\numberline {2.5}UML Diagrams}{14}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Class Diagram}{14}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{16}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}User Flow Diagram}{17}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Tools Used}{18}{section.2.6}%
-\contentsline {chapter}{\chapternumberline {3}Epilogue}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tasks Completed}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Remaining Tasks}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Updated Gantt Chart}{20}{section.3.3}%
-\contentsline {chapter}{References}{21}{section*.21}%
-\contentsline {chapter}{Bibliography}{22}{section*.24}%
-\contentsline {chapter}{Screenshots}{23}{chapter*.26}%
+\contentsline {subsection}{\numberline {2.3.3}Algorithm Steps}{14}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Final Score Calculation}{15}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Flowchart}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.5}UML Diagrams}{17}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Class Diagram}{17}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Sequence Diagram}{19}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}User Flow Diagram}{20}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Tools Used}{21}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {3}Epilogue}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tasks Completed}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Remaining Tasks}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Updated Gantt Chart}{23}{section.3.3}%
+\contentsline {chapter}{References and Bibliography}{24}{section*.21}%
+\contentsline {chapter}{Screenshots}{25}{chapter*.23}%
