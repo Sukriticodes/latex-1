@@ -53,116 +53,195 @@ Figure~\ref{fig:system_block_diagram} shows the overall system architecture of T
 \section{Algorithm}
 
 \subsection{Roommate Compatibility Scoring Algorithm}
-The main algorithm used in TRIBAL is the Roommate Compatibility Scoring Algorithm. It compares the onboarding responses of two users and calculates a compatibility score between 0 and 100. The algorithm is rule-based and uses weighted scoring because it is simple, transparent, and suitable for a minor project prototype.
-The algorithm takes two user profiles as input: the current user and a candidate roommate. It compares their lifestyle preferences such as cleanliness, budget, sleep schedule, noise level, smoking, guests, interests, study habit, food preference, and drinking habit.
-Input
-Current user profile and candidate roommate profile containing:
-Cleanliness preference
-Budget range
-Sleep schedule
-Noise preference
-Smoking preference
-Guest preference
-Interests
-Study habit
-Food preference
-Drinking preference
-Output
-A final compatibility score between 0 and 100.
+The Roommate Compatibility Scoring Algorithm is the main algorithm used in the TRIBAL application to recommend compatible roommates. It compares the roommate profiles of two users and calculates a compatibility score between 0 and 100. The algorithm is based on weighted scoring and compares multiple lifestyle preferences such as cleanliness, budget, sleep schedule, smoking, drinking, guests, food preference, study habit, interests, and noise level. Each factor contributes to the final score according to its assigned weight. After calculating the score, the algorithm applies deal-breaker rules for major lifestyle conflicts and ranks the candidates from highest to lowest compatibility.
 
+\subsubsection{Input}
+The algorithm takes two roommate profiles as input.
+\begin{itemize}
+    \item Budget range (Minimum and Maximum)
+    \item Sleep schedule
+    \item Wake-up time
+    \item Cleanliness level
+    \item Noise level
+    \item Smoking preference
+    \item Drinking preference
+    \item Guest preference
+    \item Food preference
+    \item Study habit
+    \item Interests
+    \item Gender preference
+    \item Room type preference
+\end{itemize}
 
-Table 3.1 below shows the weight distribution used in the scoring algorithm.
+\subsubsection{Output}
+\begin{itemize}
+    \item Compatibility score (0–100)
+    \item Score breakdown for each factor
+    \item Deal-breaker status (if any)
+    \item Ranked list of compatible roommates
+\end{itemize}
+
+\subsubsection{Weight Distribution}
 \begin{table}[H]
 \centering
 \begin{tabular}{|l|c|}
 \hline
 \textbf{Factor} &  \textbf{Weight (\%)} \\
 \hline
-Cleanliness & 15 \\
-Budget & 15 \\
-Sleep Schedule & 12 \\
-Noise Level & 10 \\
+Cleanliness & 20 \\
+Budget & 20 \\
+Sleep Schedule & 15 \\
+Noise Level & 12 \\
 Smoking & 10 \\
-Guests & 8 \\
-Interests & 10 \\
-Study Habit & 8 \\
-Food Preference & 7 \\
-Drinking & 5 \\
+Guests Preference & 8 \\
+Interests & 6 \\
+Study Habit & 4 \\
+Food Preference & 3 \\
+Drinking Preference & 2 \\
+\hline
+\textbf{Total} & \textbf{100} \\
 \hline
 \end{tabular}
 \caption{Compatibility Scoring Weights}
 \label{table:scoring_weights}
 \end{table}
-The general formula used to calculate the final compatibility score is:
+The sum of all weights is 100, which allows the final compatibility score to be calculated directly out of 100.
 
-\begin{equation}
-\text{Final Score} = \sum \left(\text{Factor Match Value} \times \text{Factor Weight}\right)
-\end{equation}
+\subsubsection{Compatibility Score Calculation}
+\[
+\text{FinalScore} = \sum \text{Score}_i, \quad \text{where } i = 1 \text{ to } n.
+\]
+Where $\text{Score}_i$ is the score of each matching factor and $n$ is the total number of factors. The final score is limited between 0 and 100.
 
-Where Factor Match Value is a number between 0 and 1 that represents how closely two
-users’ answers match for a particular factor, and Factor Weight is the percentage weight
-assigned to that factor as shown in Table 3.1.
-For factors with a small number of fixed options, such as smoking or sleep schedule, the
-match value is calculated using a simple rule: if both users selected the same option, the
-match value is 1; if their answers are close but not the same (for ex le, “early riser”
-and “no preference”), a partial match value such as 0.5 is given; and if the answers
-directly conflict (for example, “smoker” matched with “non-smoker, no smoking
-allowed”), the match value is set to 0.
-For factors that involve multiple selections, such as interests, the match value is
-calculated as the number of common interests divided by the total number of unique
-interests selected by both users combined. This gives a percentage overlap between the
-two users’ interests.
-For numeric factors like budget, the match value decreases as the difference between the
-two users’ stated budgets increases. If the difference is within an acceptable range, the
-match value stays close to 1. If the difference is very large, the match value moves closer
-to 0.
+\subsubsection{Individual Factor Scoring}
+\paragraph{Cleanliness}
+\[
+\text{CleanlinessScore} = 20 \times \left(1 - \frac{|C_1 - C_2|}{4}\right)
+\]
 
+\paragraph{Noise Level}
+\[
+\text{NoiseScore} = 12 \times \left(1 - \frac{|N_1 - N_2|}{4}\right)
+\]
 
-\subsection{Deal Breakers}
-Apart from the weighted scoring, the algorithm also includes a deal breaker check. Some lifestyle differences are considered serious enough that they should not simply lower the score a little, but should instead strongly affect or override the final match. For example, if one user is a heavy smoker and the other has explicitly said they cannot live with a smoker at all, this is treated as a deal breaker rather than just a normal mismatch. Table 3.2 lists the deal breaker rules currently used in the algorithm.
+\paragraph{Budget Matching}
+The algorithm compares the budget ranges of both users. If the ranges overlap, a higher score is assigned. If they do not overlap, the score is reduced according to the difference between the two budget ranges. Maximum BudgetScore = 20.
+
+\paragraph{Sleep Schedule Matching}
+\[
+\text{SleepCompatibility} = 0.7 \times \text{ScheduleCompatibility} + 0.3 \times \text{WakeTimeSimilarity}
+\]
+\[
+\text{SleepScore} = 15 \times \text{SleepCompatibility}
+\]
+
+\paragraph{Smoking Preference}
+\[
+\text{SmokingScore} = 10 \times \text{CompatibilityValue}
+\]
+Examples: Non-smoker \& Non-smoker = 1.0, Smoker \& Smoker = 1.0, Non-smoker \& Smoker = 0.0, Non-smoker \& Occasional Smoker = 0.4.
+
+\paragraph{Drinking Preference}
+\[
+\text{DrinkingScore} = 2 \times \text{CompatibilityValue}
+\]
+
+\paragraph{Guests Preference}
+Rarely = 0, Sometimes = 1, Frequently = 2.
+\[
+\text{GuestScore} = 8 \times \left(1 - \frac{|G_1 - G_2|}{2}\right)
+\]
+
+\paragraph{Study Habit}
+Same study habit = Full score, Different study habit = Half score.
+\[
+\text{StudyHabitScore} = 4 \times \text{CompatibilityValue}
+\]
+
+\paragraph{Food Preference}
+Examples: Vegetarian \& Vegetarian = 1.0, Vegetarian \& Vegan = 0.9, Vegetarian \& Non-vegetarian = 0.3.
+\[
+\text{FoodScore} = 3 \times \text{CompatibilityValue}
+\]
+
+\subsubsection{Interest Matching using Jaccard Similarity}
+\[
+J(A,B) = \frac{|A \cap B|}{|A \cup B|}
+\]
+\[
+\text{InterestScore} = 6 \times J(A,B)
+\]
+\textbf{Example}: \\
+User A: Hiking, Music, Football \\
+User B: Football, Music, Gaming \\
+Common Interests = 2 \\
+Total Unique Interests = 4 \\
+$J(A,B) = 2/4 = 0.5$ \\
+InterestScore = $6 \times 0.5 = 3$
+
+\subsubsection{Deal Breaker Conditions}
 \begin{table}[H]
 \centering
-\begin{tabular}{|p{7.2cm}|p{5.8cm}|}
+\begin{tabular}{|l|c|}
 \hline
-\textbf{Condition}  & \textbf{Effect on Score} \\
+\textbf{Deal Breaker} &  \textbf{Maximum Score} \\
 \hline
-Smoking conflict (smoker vs. strictly non-smoking) & Score capped at a low maximum \\
-Extreme budget mismatch (outside acceptable range) & Score capped at a low maximum \\
-Opposite cleanliness extremes (very messy vs. very strict) & Score significantly reduced \\
+Smoking Conflict & 40 \\
+Budget Conflict & 35 \\
+Cleanliness Conflict & 45 \\
 \hline
 \end{tabular}
 \caption{Deal Breaker Rules}
 \label{table:deal_breakers}
 \end{table}
-When a deal breaker condition is detected, the algorithm does not let the final score go above a fixed low ceiling, even if all other factors match well. This makes sure that users are not shown as highly compatible with someone they have a fundamental lifestyle conflict with.
+Instead of completely rejecting a match, the algorithm limits the maximum compatibility score.
 
-\subsection{Algorithm Steps}
+\subsubsection{Candidate Filtering}
+Before calculating compatibility scores, the algorithm removes users who do not satisfy the required preferences.
+\begin{itemize}
+    \item Gender preference
+    \item Room type preference
+\end{itemize}
+
+\subsubsection{Algorithm Steps}
 \begin{algorithm}[!htb]
 \caption{Roommate Compatibility Scoring Algorithm}
 \label{alg:roommate-matching}
-\KwIn{Current user's profile, Candidate roommate profiles}
+\KwIn{Current user profile and candidate roommate profiles}
 \KwOut{Ranked list of compatible roommates}
 
-Retrieve the current user's onboarding responses and roommate preferences\;
-Fetch all candidate roommate profiles from the database\;
-Initialize an empty list named CompatibleCandidates\;
+Get current user's roommate profile\;
+Fetch all active roommate profiles\;
+Remove the current user from the candidate list\;
 
-\For{each candidate profile in the candidate list}{
-    Set $\text{total\_score} \leftarrow 0$\;
-    Compute compatibility scores for: cleanliness, budget, sleep schedule, noise tolerance, smoking preference, guest preference, shared interests, study habits, food preference, drinking preference\;
-    Calculate the total compatibility score by summing all individual criterion scores\;
-    Check for deal-breaker conditions (incompatible smoking, extreme budget mismatch, opposite cleanliness extremes); apply score cap or reduction if needed\;
-    Round the final compatibility score\;
-    Store the candidate profile together with its final compatibility score in CompatibleCandidates\;
+\For{each candidate}{
+    Check gender preference\;
+    Check room type preference\;
+    \If{candidate passes the filters}{
+        Calculate cleanliness score\;
+        Calculate budget score\;
+        Calculate sleep schedule score\;
+        Calculate noise level score\;
+        Calculate smoking score\;
+        Calculate drinking score\;
+        Calculate guest preference score\;
+        Calculate food preference score\;
+        Calculate study habit score\;
+        Calculate interest score using Jaccard Similarity\;
+        Add all scores to obtain the total compatibility score\;
+        Apply deal-breaker rules if necessary\;
+        Store the candidate and final score\;
+    }
 }
 
-Sort CompatibleCandidates in descending order based on the final compatibility score\;
-Return the sorted list as the ranked roommate recommendations\;
+Sort all candidates in descending order of compatibility score\;
+Return the ranked roommate list\;
 \end{algorithm}
 
-\subsection{Final Score Calculation}
-Once all the individual factor match values are calculated and weighted, they are added together to get the final compatibility score. If a deal breaker is triggered, the score is capped according to the deal breaker rule before being returned to the user. The final score is then rounded to the nearest whole number and shown to the user as a percentage match out of 100. This score is what the user sees in the app when browsing potential roommates, helping them quickly understand how compatible they may be with someone before starting a conversation.
-This algorithm provides a transparent and explainable matching system. Since it does not depend on machine learning or large datasets, it is practical for the current scope of the TRIBAL minor project.
+\subsubsection{Final Ranking}
+After calculating the compatibility score for every candidate, the algorithm sorts all candidates in descending order based on their final scores. The users with the highest compatibility scores are displayed first in the roommate recommendation section.
+
+The proposed algorithm is transparent, easy to understand, and computationally efficient. Since it uses weighted scoring instead of machine learning, it does not require training data and can provide explainable roommate recommendations suitable for the current implementation of the TRIBAL application.
 
 
 \section{Flowchart}
